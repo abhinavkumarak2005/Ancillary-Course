@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <!-- Loads Tailwind offline -->
+    <script src="tailwindcss.js"></script>
+    
+    <style>
+        /* Custom spinner */
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, .1);
+            border-left-color: #FFF;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* --- 3. NEW: Animated Aurora Background --- */
+        body {
+            background-color: #000000; /* Black background */
+            color: #ffffff;
+            position: relative;
+            overflow-x: hidden;
+            /* Offline-safe font */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        /* This pseudo-element creates the aurora */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -10vh; /* Start slightly off-screen */
+            left: 0;
+            width: 100%;
+            height: 60vh; /* Covers top 60% */
+            background: linear-gradient(-45deg, #3A29FF, #FF94B4, #FF3232, #3A29FF);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            filter: blur(120px); 
+            opacity: 0.5;
+            z-index: -1;
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        /* App container sits on top */
+        #app, #page-admin-login {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* --- 4. *** MODIFIED *** Glassmorphism Card Style --- */
+        .glass-card {
+            background: rgba(40, 40, 40, 0.4); 
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15); 
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* 5. NEW: Custom Table Styles for Glass UI */
+        .glass-table thead th {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .glass-table tbody tr {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-table tbody tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        .glass-table tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        .glass-table input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        .glass-table input:focus {
+            background: rgba(0, 0, 0, 0.1);
+            outline: 1px solid white;
+        }
+        
+        /* Hide number input arrows */
+        input[type=number] { -moz-appearance: textfield; }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        /* --- Animation Styles --- */
+        .page {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .save-cgpa-btn, .save-course-btn, .view-prefs-btn, .status-tab, .report-tab, .cgpa-management-tab, #download-report-all-btn, #download-allocation-btn, .report-dept-link, #admin-login-form button, .delete-pref-btn, .about-bubble, #upload-csv-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        #download-report-all-btn:hover, #download-allocation-btn:hover, .report-dept-link:hover, #admin-login-form button:hover, .about-bubble:hover, #upload-csv-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+         #download-report-all-btn:active, #download-allocation-btn:active, .report-dept-link:active, #admin-login-form button:active, .about-bubble:active, #upload-csv-btn:active {
+            transform: scale(0.98);
+        }
+        .delete-pref-btn:hover {
+            color: #ef4444; /* red-500 */
+        }
+        
+        /* --- 6. NEW: AnimatedList CSS (from your code) --- */
+        .scroll-list-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .scroll-list {
+            max-height: 400px;
+            overflow-y: auto;
+            padding: 16px;
+        }
+        .scroll-list::-webkit-scrollbar { width: 8px; }
+        .scroll-list::-webkit-scrollbar-track { background: #060010; }
+        .scroll-list::-webkit-scrollbar-thumb { background: #271e37; border-radius: 4px; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .item {
+            padding: 16px;
+            background-color: #170d27;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            opacity: 0;
+            transform: scale(0.8) translateY(20px);
+            transition: opacity 0.4s ease-out, transform 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+        .item.is-visible {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+        
+        .item:hover { background-color: #271e37; }
+        .item.selected { background-color: #3b82f6; }
+        .item-text { color: white; margin: 0; font-weight: 500; }
+        
+        .top-gradient {
+            position: absolute; top: 0; left: 0; right: 0; height: 50px;
+            background: linear-gradient(to bottom, #000, transparent);
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .bottom-gradient {
+            position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+            background: linear-gradient(to top, #000, transparent);
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        /* --- 7. NEW: BubbleMenu CSS (from your code) --- */
+        #page-dashboard:not(.hidden) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 8rem; /* Pushes bubbles down */
+            padding-bottom: 8rem;
+        }
+        .bubble-menu-items {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+        .bubble-menu-items .pill-list {
+            list-style: none;
+            margin: 0;
+            padding: 0 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            row-gap: 16px; 
+            width: 100%;
+            max-width: 1000px; 
+            margin-left: auto;
+            margin-right: auto;
+            pointer-events: auto;
+            justify-content: center; 
+        }
+        .bubble-menu-items .pill-list .pill-col {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex: 0 0 100%; 
+            box-sizing: border-box;
+        }
+        .bubble-menu-items .pill-link {
+            --pill-bg: #ffffff;
+            --pill-color: #111;
+            --item-rot: 0deg;
+            --pill-min-h: 120px; 
+            --hover-bg: #f3f4f6;
+            --hover-color: #111;
+            width: 100%;
+            min-height: var(--pill-min-h);
+            padding: clamp(1.5rem, 3vw, 3rem) 0; 
+            font-size: clamp(1.5rem, 4vw, 3rem); 
+            font-weight: 500;
+            border-radius: 999px;
+            background: var(--pill-bg);
+            color: var(--pill-color);
+            text-decoration: none;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.3s ease;
+            will-change: transform, opacity;
+            box-sizing: border-box;
+            white-space: nowrap;
+            overflow: hidden;
+            opacity: 0;
+            transform: scale(0.5);
+            animation: bubbleFadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        @keyframes bubbleFadeIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .bubble-menu-items .pill-link .pill-label {
+            display: inline-block;
+            will-change: transform, opacity;
+            height: 1.2em;
+            line-height: 1.2;
+        }
+        
+        @media (min-width: 900px) {
+            .bubble-menu-items .pill-list .pill-col {
+                flex: 0 0 calc(100% / 3); 
+            }
+            .bubble-menu-items .pill-list .pill-col:nth-child(4) {
+                 margin-left: calc(100% / 6);
+            }
+            .bubble-menu-items .pill-list .pill-col:nth-child(5) {
+                 margin-right: calc(100% / 6);
+            }
+            
+            .bubble-menu-items .pill-link {
+                transform: rotate(var(--item-rot));
+            }
+            .bubble-menu-items .pill-link:hover {
+                transform: rotate(var(--item-rot)) scale(1.06);
+                background: var(--hover-bg);
+                color: var(--hover-color);
+            }
+            .bubble-menu-items .pill-link:active {
+                transform: rotate(var(--item-rot)) scale(0.94);
+            }
+        }
+        /* --- 8. NEW: SF Pro Font --- */
+        .sf-pro-font {
+            /* Fallback for non-Apple devices */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        /* --- 9. NEW: "About" Bubble --- */
+        .about-bubble {
+            position: fixed;
+            top: 2rem;
+            right: 2.5rem;
+            z-index: 999;
+            background: rgba(30, 30, 30, 0.25);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .about-bubble:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body style="font-family: 'Inter', sans-serif;">
+    
+    <!-- Aurora Background -->
+    <div></div>
+
+    <div id="page-admin-login" class="min-h-screen flex items-center justify-center p-4 page">
+        
+        <a href="https://bento.me/abhinavkumarilango" target="_blank" rel="noopener noreferrer" class="about-bubble">
+            About
+        </a>
+
+        <div class="glass-card p-8 rounded-xl w-full max-w-sm">
+            <h3 class="text-xl font-semibold text-center text-white">Admin Login</h3>
+            <p class="text-sm text-gray-300 text-center mb-6">Enter password to access the portal.</p>
+            <form id="admin-login-form">
+                <div class="mb-4">
+                    <label for="admin-password" class="block text-sm font-medium text-gray-200 mb-1">Password</label>
+                    <input type="password" id="admin-password" class="w-full px-4 py-2 bg-white/10 text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white">
+                </div>
+                <button type="submit" class="w-full bg-white text-gray-900 py-2 rounded-lg font-semibold hover:bg-gray-200">
+                    Login
+                </button>
+            </form>
+            <div id="admin-login-error" class="hidden mt-4 text-center text-sm text-red-400 bg-red-900/50 p-3 rounded-lg">
+                Invalid password.
+            </div>
+        </div>
+    </div>
+
+
+    <div id="app" class="min-h-screen p-4 md:p-8 hidden">
+    
+        <a href="https://bento.me/abhinavkumarilango" target="_blank" rel="noopener noreferrer" class="about-bubble">
+            About
+        </a>
+
+        <div class="w-full max-w-6xl mx-auto mb-6">
+            
+            <div id="header-dashboard" class="text-center pt-12 mb-8"> 
+                <h1 class="text-6xl font-bold text-white sf-pro-font">Ancillary Course</h1>
+                <h1 class="text-5xl font-bold text-white sf-pro-font mt-2">Admin Portal</h1>
+                <p class="text-md text-gray-300 mt-4">Manage student data, courses, and preferences.</p>
+            </div>
+            
+            <div id="header-context" class="hidden flex items-center justify-between mb-4">
+                <button class="nav-button text-gray-200 font-medium text-lg !shadow-none !transform-none" data-target="dashboard">
+                    &larr; Back to Dashboard
+                </button>
+            </div>
+        </div>
+
+        <div class="w-full max-w-6xl mx-auto">
+            
+            <div id="page-dashboard" class="hidden page">
+                <div class="bubble-menu-items">
+                    <ul class="pill-list" role="menu" aria-label="Menu links">
+                        <li role="none" class="pill-col">
+                            <a role="menuitem" href="#" class="pill-link nav-button" data-target="cgpa"
+                               style="--item-rot: -8deg; --hover-bg: #3b82f6; --hover-color: #ffffff; animation-delay: 0.1s;">
+                                <span class="pill-label">CGPA</span>
+                            </a>
+                        </li>
+                        <li role="none" class="pill-col">
+                            <a role="menuitem" href="#" class="pill-link nav-button" data-target="courses"
+                               style="--item-rot: 8deg; --hover-bg: #10b981; --hover-color: #ffffff; animation-delay: 0.2s;">
+                                <span class="pill-label">Courses</span>
+                            </a>
+                        </li>
+                        <li role="none" class="pill-col">
+                            <a role="menuitem" href="#" class="pill-link nav-button" data-target="status"
+                               style="--item-rot: -8deg; --hover-bg: #f59e0b; --hover-color: #ffffff; animation-delay: 0.3s;">
+                                <span class="pill-label">Status</span>
+                            </a>
+                        </li>
+                        <li role="none" class="pill-col">
+                            <a role="menuitem" href="#" class="pill-link nav-button" data-target="report"
+                               style="--item-rot: 8deg; --hover-bg: #ef4444; --hover-color: #ffffff; animation-delay: 0.4s;">
+                                <span class="pill-label">Report</span>
+                            </a>
+                        </li>
+                         <li role="none" class="pill-col">
+                            <a role="menuitem" href="#" class="pill-link nav-button" data-target="logout"
+                               style="--item-rot: -8deg; --hover-bg: #8b5cf6; --hover-color: #ffffff; animation-delay: 0.5s;">
+                                <span class="pill-label">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ############################################ -->
+            <!-- ### THIS IS THE MODIFIED CGPA PAGE ### -->
+            <!-- ############################################ -->
+            <div id="page-cgpa" class="hidden page">
+                <div class="glass-card p-6 md:p-8 rounded-xl max-w-2xl mx-auto"> <!-- Changed max-width -->
+                    <h3 class="text-xl font-semibold text-white mb-4 text-center">Manage Student CGPA</h3>
+                    
+                    <!-- *** NEW TABS *** -->
+                    <div class="flex border-b border-white/20 mb-6">
+                        <button id="tab-manual-entry" class="cgpa-management-tab px-4 py-2 font-medium text-blue-400 border-b-2 border-blue-400 flex-1 text-center">
+                            Manual Entry
+                        </button>
+                        <button id="tab-csv-upload" class="cgpa-management-tab px-4 py-2 font-medium text-gray-400 border-b-2 border-transparent hover:text-gray-200 flex-1 text-center">
+                            Upload CSV
+                        </button>
+                    </div>
+
+                    <!-- *** NEW: Upload Content (Moved from Report) *** -->
+                    <div id="cgpa-tab-upload" class="cgpa-tab-content hidden">
+                        <p class="text-sm text-gray-300 mb-4 text-center">1. Select a department to upload data for.</p>
+                        
+                        <div class="scroll-list-container">
+                            <div id="upload-dept-list" class="scroll-list no-scrollbar">
+                                <!-- Upload department list will be injected here -->
+                            </div>
+                            <div id="upload-list-top-gradient" class="top-gradient"></div>
+                            <div id="upload-list-bottom-gradient" class="bottom-gradient"></div>
+                        </div>
+                        
+                        <!-- This form appears after a dept is selected -->
+                        <div id="upload-form-container" class="hidden mt-6">
+                            <p class="text-sm text-gray-300 mb-4 text-center">2. Select the CSV file for <strong id="upload-dept-name"></strong>.</p>
+                            <form id="upload-csv-form">
+                                <input type="file" id="csv-file-input" class="w-full text-sm text-gray-300
+                                    file:mr-4 file:py-2 file:px-4
+                                    file:rounded-full file:border-0
+                                    file:text-sm file:font-semibold
+                                    file:bg-white/10 file:text-white
+                                    hover:file:bg-white/20" required>
+                                
+                                <p class="text-xs text-yellow-300 bg-yellow-900/50 p-3 rounded-lg mt-4">
+                                    <strong>Required Format:</strong> The CSV file must contain columns named "RegisterNumber" and "CGPA". Any other columns will be ignored. The upload will only update students matching the selected department.
+                                </p>
+                                
+                                <button type="submit" id="upload-csv-btn" class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500 flex items-center justify-center">
+                                    <span id="upload-button-text">Upload and Process File</span>
+                                    <div id="upload-spinner" class="spinner hidden"></div>
+                                </button>
+                            </form>
+                            <div id="upload-error" class="hidden mt-4 text-center text-sm text-red-400 bg-red-900/50 p-3 rounded-lg"></div>
+                            <div id="upload-success" class="hidden mt-4 text-center text-sm text-green-400 bg-green-900/50 p-3 rounded-lg"></div>
+                        </div>
+                    </div>
+
+                    <!-- *** Original Manual Entry Content (Now in a tab) *** -->
+                    <div id="cgpa-tab-manual" class="cgpa-tab-content">
+                        <p class="text-sm text-gray-300 mb-4 text-center">Select a department to view and edit students manually.</p>
+                        <div class="scroll-list-container">
+                            <div id="cgpa-dept-list" class="scroll-list no-scrollbar">
+                                <!-- List populated by JS -->
+                            </div>
+                            <div id="cgpa-list-top-gradient" class="top-gradient"></div>
+                            <div id="cgpa-list-bottom-gradient" class="bottom-gradient"></div>
+                        </div>
+                        
+                        <div id="cgpa-table-container" class="hidden mt-6">
+                            <h4 id="cgpa-table-heading" class="text-lg font-semibold text-gray-100 mb-4"></h4>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full divide-y divide-white/10 glass-table">
+                                    <!-- *** THIS IS THE FIX: Added "Action" header *** -->
+                                    <thead>
+                                        <tr>
+                                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Register Number</th>
+                                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Student Name</th>
+                                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">CGPA</th>
+                                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cgpa-table-body" class="divide-y divide-white/10">
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="page-courses" class="hidden page">
+                <div class="glass-card p-6 md:p-8 rounded-xl">
+                    <h3 class="text-xl font-semibold text-white mb-4">Manage Courses</h3>
+                    <p class="text-sm text-gray-300 mb-6">Click the save icon to update course name or seat availability.</p>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-white/10 glass-table">
+                            <thead>
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Department</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Course Name</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Subject ID</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">No. of Seats</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="courses-table-body" class="divide-y divide-white/10">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-status" class="hidden page">
+                <div class="glass-card p-6 md:p-8 rounded-xl">
+                    <h3 class="text-xl font-semibold text-white mb-4">Preference Status</h3>
+                    
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                        <div class="relative w-full md:w-1/3">
+                            <input type="text" id="search-status" placeholder="Search by register number, name..." class="w-full px-4 py-2 pl-10 bg-white/10 text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white">
+                            <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="flex border-b border-white/20 mt-4 md:mt-0">
+                            <button id="tab-submitted" class="status-tab px-4 py-2 font-medium text-blue-400 border-b-2 border-blue-400">
+                                Students Submitted <span id="submitted-count" class="text-xs bg-blue-900/50 text-blue-300 font-bold px-2 py-0.5 rounded-full">0</span>
+                            </button>
+                            <button id="tab-not-submitted" class="status-tab px-4 py-2 font-medium text-gray-400 border-b-2 border-transparent hover:text-gray-200">
+                                Students Not Submitted <span id="not-submitted-count" class="text-xs bg-gray-700/50 text-gray-300 font-bold px-2 py-0.5 rounded-full">0</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="table-submitted" class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-white/10 glass-table">
+                            <thead>
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Register Number</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Name</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Department</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">CGPA</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Preferences</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="submitted-table-body" class="divide-y divide-white/10">
+                                </tbody>
+                        </table>
+                    </div>
+
+                    <div id="table-not-submitted" class="hidden overflow-x-auto">
+                        <table class="min-w-full divide-y divide-white/10 glass-table">
+                            <thead>
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Register Number</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Name</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Department</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">CGPA</th>
+                                </tr>
+                            </thead>
+                            <tbody id="not-submitted-table-body" class="divide-y divide-white/10">
+                                </tbody>
+                        </table>
+                    </div>
+                    <p id="status-no-results" class="hidden text-center text-gray-400 py-10">No students found.</p>
+
+                </div>
+            </div>
+
+            <!-- ############################################ -->
+            <!-- ### THIS IS THE MODIFIED REPORT PAGE ### -->
+            <!-- ############################################ -->
+            <div id="page-report" class="hidden page">
+                <div class="glass-card p-6 md:p-8 rounded-xl max-w-lg mx-auto"> <!-- Back to max-w-lg -->
+                    
+                    <!-- *** MODIFIED *** Tab Navigation (Upload tab removed) -->
+                    <div class="flex border-b border-white/20 mb-6">
+                        <button id="tab-preferences" class="report-tab px-4 py-2 font-medium text-blue-400 border-b-2 border-blue-400 flex-1 text-center">
+                            Preference Report
+                        </button>
+                        <button id="tab-allocation" class="report-tab px-4 py-2 font-medium text-gray-400 border-b-2 border-transparent hover:text-gray-200 flex-1 text-center">
+                            Allocation Report
+                        </button>
+                    </div>
+
+                    <!-- 2. Tab Content for Preferences -->
+                    <div id="report-tab-preferences" class="report-tab-content">
+                        <div class="text-center">
+                            <div class="mx-auto bg-blue-500/30 text-white p-4 rounded-full w-16 h-16 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mt-6">Download Preference Report</h3>
+                            <p class="text-sm text-gray-300 my-4">
+                                This report lists all students who submitted and the exact preferences they chose (P1, P2...).
+                            </p>
+                            <a href="/api/admin/download-report" id="download-report-all-btn" class="mt-6 w-full inline-block bg-white text-gray-900 py-2 rounded-lg font-semibold hover:bg-gray-200 text-center">
+                                Download All Preferences (.csv)
+                            </a>
+                            
+                            <div class="my-4 text-center text-sm text-gray-400">or</div>
+                            
+                            <h4 class="text-md font-semibold text-gray-100 mb-3">Download by Department</h4>
+                            <div id="report-dept-buttons" class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                <!-- Department buttons will be injected here by JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Tab Content for Allocation (Hidden by default) -->
+                    <div id="report-tab-allocation" class="report-tab-content hidden">
+                        <div class="text-center">
+                            <div class="mx-auto bg-green-500/30 text-white p-4 rounded-full w-16 h-16 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mt-6">Generate Allocation Report</h3>
+                            <p class="text-sm text-gray-300 my-4">
+                                Click this to run the allocation algorithm. It will process all students by CGPA, check their preferences against available seats, and generate a final report of which course each student is allocated to.
+                            </p>
+                            <a href="/api/admin/download-allocation" id="download-allocation-btn" class="mt-6 w-full inline-block bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-500 text-center">
+                                Generate & Download Allocation (.csv)
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- ############################################ -->
+            <!-- ### END OF MODIFIED REPORT PAGE ### -->
+            <!-- ############################################ -->
+
+        </div> 
+    </div>
+
+    <script>
+        // --- Configuration ---
+        const API_BASE_URL = '/api'; 
+        const ADMIN_PASSWORD = 'admin123'; 
+
+        // --- State ---
+        const state = {
+            currentPage: 'page-admin-login', 
+            allStudents: [],
+            allCourses: [],
+            allDepartments: [], 
+            preferenceStatus: { submitted: [], notSubmitted: [] },
+            uploadDept: null, 
+        };
+
+        // --- DOM Elements (Declared here, populated in main) ---
+        let appDiv, adminLoginPage;
+        let pages = {};
+        let headerDashboard, headerContext;
+
+        // --- Utility Functions ---
+        function navigateTo(pageId) {
+            Object.values(pages).forEach(page => {
+                if(page) page.classList.add('hidden');
+            });
+            
+            if (pageId === 'dashboard') {
+                if(headerDashboard) headerDashboard.classList.remove('hidden');
+                if(headerContext) headerContext.classList.add('hidden');
+                if(pages.dashboard) pages.dashboard.classList.remove('hidden');
+                
+            } else {
+                if(headerDashboard) headerDashboard.classList.add('hidden');
+                if(headerContext) headerContext.classList.remove('hidden');
+                if(pages.dashboard) pages.dashboard.classList.add('hidden'); 
+                
+                const targetPage = pages[pageId];
+                if (targetPage) {
+                    targetPage.classList.remove('hidden');
+                    state.currentPage = pageId;
+                } else {
+                    console.error(`Page not found: ${pageId}`);
+                    if(headerDashboard) headerDashboard.classList.remove('hidden');
+                    if(headerContext) headerContext.classList.add('hidden'); 
+                    if(pages.dashboard) pages.dashboard.classList.remove('hidden');
+                }
+            }
+        }
+        
+        function showError(elementId, message) {
+            const errorEl = document.getElementById(elementId);
+            if(errorEl) {
+                errorEl.textContent = message;
+                errorEl.classList.remove('hidden');
+            }
+        }
+
+        function hideError(elementId) {
+            const errorEl = document.getElementById(elementId);
+            if(errorEl) errorEl.classList.add('hidden');
+        }
+        
+        function showSuccess(elementId, message) {
+            const successEl = document.getElementById(elementId);
+            if(successEl) {
+                successEl.textContent = message;
+                successEl.classList.remove('hidden');
+            }
+        }
+        
+        function hideSuccess(elementId) {
+            const successEl = document.getElementById(elementId);
+            if(successEl) successEl.classList.add('hidden');
+        }
+
+        function toggleSpinner(buttonTextId, spinnerId, isLoading) {
+            const textEl = document.getElementById(buttonTextId);
+            const spinnerEl = document.getElementById(spinnerId);
+            if (textEl && spinnerEl) {
+                if (isLoading) {
+                    textEl.classList.add('hidden');
+                    spinnerEl.classList.remove('hidden');
+                } else {
+                    textEl.classList.remove('hidden');
+                    spinnerEl.classList.add('hidden');
+                }
+            }
+        }
+        
+        function showSaveSuccess(iconElement) {
+            iconElement.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+            `;
+            setTimeout(() => {
+                iconElement.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1-4l-3 3m0 0l-3-3m3 3V4" />
+                    </svg>
+                `;
+            }, 2000);
+        }
+
+        // --- API & Rendering Functions ---
+        
+        // *** THIS IS THE CORRECT FUNCTION ***
+        function renderCgpaTable(department) {
+            const tableBody = document.getElementById('cgpa-table-body');
+            const tableContainer = document.getElementById('cgpa-table-container');
+            const tableHeading = document.getElementById('cgpa-table-heading');
+            
+            tableBody.innerHTML = ''; 
+            tableHeading.textContent = `Showing Students for: ${department}`;
+            tableContainer.classList.remove('hidden'); 
+
+            // Refresh student data from state, which might have been updated by upload
+            const filteredStudents = state.allStudents
+                .filter(s => s.Department === department)
+                .sort((a, b) => a.RegisterNumber.localeCompare(b.RegisterNumber));
+
+            if (filteredStudents.length === 0) {
+                tableBody.innerHTML = `<tr><td colspan="4" class="px-6 py-4 text-center text-gray-400">No students found for this department.</td></tr>`;
+                return;
+            }
+
+            filteredStudents.forEach(student => {
+                const row = document.createElement('tr');
+                // *** THE 4th <td> (ACTION BUTTON) IS HERE ***
+                row.innerHTML = `
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">${student.RegisterNumber}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">${student.Name}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                        <input type="number" step="0.01" value="${student.CGPA}" id="cgpa-input-${student.RegisterNumber}" class="w-20 px-2 py-1 rounded-md">
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-400">
+                        <button class="save-cgpa-btn p-1 hover:bg-blue-900/50 rounded-full" data-regno="${student.RegisterNumber}">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1-4l-3 3m0 0l-3-3m3 3V4" />
+                            </svg>
+                        </button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+        
+        async function loadCgpaPage() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/admin/students`);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+                if (!data.success) throw new Error("API reported failure");
+                
+                state.allStudents = data.students;
+                
+                const depts = new Set(state.allStudents.map(s => s.Department));
+                state.allDepartments = Array.from(depts).sort();
+                
+                const listDiv = document.getElementById('cgpa-dept-list');
+                const reportButtonsDiv = document.getElementById('report-dept-buttons');
+                const uploadListDiv = document.getElementById('upload-dept-list'); 
+                
+                listDiv.innerHTML = ''; 
+                if (reportButtonsDiv) reportButtonsDiv.innerHTML = ''; 
+                if (uploadListDiv) uploadListDiv.innerHTML = ''; 
+                
+                const itemsToObserve = [];
+                const uploadItemsToObserve = []; 
+                
+                state.allDepartments.forEach((dept, index) => {
+                    // 1. Create CGPA List Item
+                    const item = document.createElement('div');
+                    item.className = 'item cgpa-dept-item'; 
+                    item.dataset.dept = dept;
+                    item.innerHTML = `<p class="item-text">${dept}</p>`;
+                    listDiv.appendChild(item);
+                    itemsToObserve.push(item);
+                    
+                    // 2. Create Report Tab Button
+                    if (reportButtonsDiv) {
+                        const reportLink = document.createElement('a');
+                        reportLink.href = `/api/admin/download-report?dept=${dept}`;
+                        reportLink.className = "report-dept-link px-3 py-2 bg-white/10 border border-white/20 rounded-md text-sm font-medium text-gray-200 hover:bg-white/20 text-center";
+                        reportLink.textContent = `${dept} Report`;
+                        reportButtonsDiv.appendChild(reportLink);
+                    }
+                    
+                    // 3. Create Upload Tab List Item
+                    if (uploadListDiv) {
+                        const uploadItem = document.createElement('div');
+                        uploadItem.className = 'item upload-dept-item'; 
+                        uploadItem.dataset.dept = dept;
+                        uploadItem.innerHTML = `<p class="item-text">${dept}</p>`;
+                        uploadListDiv.appendChild(uploadItem);
+                        uploadItemsToObserve.push(uploadItem);
+                    }
+                });
+
+                // 3. Create the Intersection Observer for CGPA list
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { root: listDiv, rootMargin: "0px 0px -20px 0px", threshold: 0.1 });
+
+                itemsToObserve.forEach(item => observer.observe(item));
+                
+                // 4. Create Observer for Upload list
+                const uploadObserver = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { root: uploadListDiv, rootMargin: "0px 0px -20px 0px", threshold: 0.1 });
+                
+                uploadItemsToObserve.forEach(item => uploadObserver.observe(item));
+                
+            } catch (error) {
+                console.error("Error loading CGPA page:", error);
+            }
+        }
+        
+        
+        async function handleSaveCgpa(saveButton) {
+            const registerNumber = saveButton.dataset.regno;
+            const newCgpa = document.getElementById(`cgpa-input-${registerNumber}`).value;
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/admin/update-cgpa`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ registerNumber, cgpa: newCgpa })
+                });
+                if (!response.ok) throw new Error("Update failed");
+                
+                showSaveSuccess(saveButton);
+                
+                // Update state locally
+                const student = state.allStudents.find(s => s.RegisterNumber === registerNumber);
+                if (student) student.CGPA = parseFloat(newCgpa);
+                
+            } catch (error) {
+                console.error("Error updating CGPA:", error);
+                alert("Error updating CGPA. Check console.");
+            }
+        }
+
+        async function loadCoursesPage() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/admin/courses`);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+                if (!data.success) throw new Error("API reported failure");
+                state.allCourses = data.courses;
+                
+                const tableBody = document.getElementById('courses-table-body');
+                if(!tableBody) return;
+                
+                tableBody.innerHTML = ''; 
+                
+                state.allCourses.forEach(course => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">${course.Department}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                            <input type="text" value="${course.CourseName}" id="coursename-input-${course.SubjectID}" class="w-full px-2 py-1 rounded-md">
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                            <input type="text" value="${course.SubjectID}" id="subjectid-input-${course.SubjectID}" class="w-24 px-2 py-1 rounded-md">
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                            <input type="number" value="${course.NoOfSeats}" id="seats-input-${course.SubjectID}" class="w-20 px-2 py-1 rounded-md">
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-400">
+                            <button class="save-course-btn p-1 hover:bg-blue-900/50 rounded-full" data-subid="${course.SubjectID}">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1-4l-3 3m0 0l-3-3m3 3V4" />
+                                </svg>
+                            </button>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+                
+            } catch (error) {
+                console.error("Error loading Courses page:", error);
+            }
+        }
+        
+        async function handleSaveCourse(saveButton) {
+            const originalSubjectID = saveButton.dataset.subid;
+            const newSubjectID = document.getElementById(`subjectid-input-${originalSubjectID}`).value;
+            const courseName = document.getElementById(`coursename-input-${originalSubjectID}`).value;
+            const noOfSeats = document.getElementById(`seats-input-${originalSubjectID}`).value;
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/admin/update-course`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        originalSubjectID, 
+                        newSubjectID, 
+                        courseName, 
+                        noOfSeats 
+                    })
+                });
+                if (!response.ok) {
+                    const err = await response.json();
+                    throw new Error(err.message || "Update failed");
+                }
+                
+                saveButton.dataset.subid = newSubjectID;
+                
+                showSaveSuccess(saveButton); 
+            } catch (error) {
+                console.error("Error updating course:", error);
+                alert(`Error updating course: ${error.message}`);
+            }
+        }
+        
+        async function loadStatusPage() {
+            try {
+                // Refresh student data from state first
+                const studentResponse = await fetch(`${API_BASE_URL}/admin/students`);
+                const studentData = await studentResponse.json();
+                if (studentData.success) {
+                    state.allStudents = studentData.students;
+                }
+                
+                const response = await fetch(`${API_BASE_URL}/admin/preference-status`);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+                if (!data.success) throw new Error("API reported failure");
+                
+                state.preferenceStatus.submitted = data.submitted;
+                state.preferenceStatus.notSubmitted = data.notSubmitted;
+                
+                renderStatusTables(); 
+                
+            } catch (error) {
+                console.error("Error loading status page:", error);
+            }
+        }
+        
+        function renderStatusTables() {
+            const searchInput = document.getElementById('search-status');
+            if (!searchInput) return; 
+            
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            const submittedTable = document.getElementById('submitted-table-body');
+            const notSubmittedTable = document.getElementById('not-submitted-table-body');
+            submittedTable.innerHTML = '';
+            notSubmittedTable.innerHTML = '';
+            
+            let submittedCount = 0;
+            let notSubmittedCount = 0;
+            
+            state.preferenceStatus.submitted.forEach(student => {
+                if (student.Name.toLowerCase().includes(searchTerm) || student.RegisterNumber.toLowerCase().includes(searchTerm)) {
+                    submittedCount++;
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">${student.RegisterNumber}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">${student.Name}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">${student.Department}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">${student.CGPA}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-400">
+                            <button class="view-prefs-btn" data-regno="${student.RegisterNumber}">View</button>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+                            <button class="delete-pref-btn p-1 hover:bg-red-900/50 rounded-full" data-regno="${student.RegisterNumber}" title="Delete Preference">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
+                        </td>
+                    `;
+                    const prefsRow = document.createElement('tr');
+                    prefsRow.classList.add('hidden');
+                    prefsRow.id = `prefs-${student.RegisterNumber}`;
+                    prefsRow.innerHTML = `
+                        <td colspan="6" class="px-6 py-4 text-sm text-gray-300 bg-black/10">
+                            <ol class="list-decimal list-inside grid grid-cols-3 gap-2">
+                                ${student.Preferences.map((p, i) => `<li><strong>${i+1}:</strong> ${p}</li>`).join('')}
+                            </ol>
+                        </td>
+                    `;
+                    submittedTable.appendChild(row);
+                    submittedTable.appendChild(prefsRow);
+                }
+            });
+
+            state.preferenceStatus.notSubmitted.forEach(student => {
+                if (student.Name.toLowerCase().includes(searchTerm) || student.RegisterNumber.toLowerCase().includes(searchTerm)) {
+                    notSubmittedCount++;
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">${student.RegisterNumber}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">${student.Name}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">${student.Department}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">${student.CGPA}</td>
+                    `;
+                    notSubmittedTable.appendChild(row);
+                }
+            });
+            
+            document.getElementById('submitted-count').textContent = submittedCount;
+            document.getElementById('not-submitted-count').textContent = notSubmittedCount;
+            
+            const noResults = document.getElementById('status-no-results');
+            if(submittedTable.innerHTML === '' && notSubmittedTable.innerHTML === '') {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+        
+        function handleViewPreferences(viewButton) {
+            const registerNumber = viewButton.dataset.regno;
+            const prefsRow = document.getElementById(`prefs-${registerNumber}`);
+            prefsRow.classList.toggle('hidden');
+            
+            if (prefsRow.classList.contains('hidden')) {
+                viewButton.textContent = 'View';
+            } else {
+                viewButton.textContent = 'Hide';
+            }
+        }
+        
+        function handleTabSwitch(activeTab) {
+            const submittedTab = document.getElementById('tab-submitted');
+            const notSubmittedTab = document.getElementById('tab-not-submitted');
+            const submittedTable = document.getElementById('table-submitted');
+            const notSubmittedTable = document.getElementById('table-not-submitted');
+
+            const isActiveSubmitted = activeTab.id === 'tab-submitted';
+            
+            submittedTab.classList.toggle('text-blue-400', isActiveSubmitted);
+            submittedTab.classList.toggle('border-blue-400', isActiveSubmitted);
+            submittedTab.classList.toggle('text-gray-400', !isActiveSubmitted);
+            submittedTab.classList.toggle('hover:text-gray-200', !isActiveSubmitted);
+            submittedTab.classList.toggle('border-transparent', !isActiveSubmitted); 
+
+            notSubmittedTab.classList.toggle('text-blue-400', !isActiveSubmitted);
+            notSubmittedTab.classList.toggle('border-blue-400', !isActiveSubmitted);
+            notSubmittedTab.classList.toggle('text-gray-400', isActiveSubmitted);
+            notSubmittedTab.classList.toggle('hover:text-gray-200', isActiveSubmitted);
+            notSubmittedTab.classList.toggle('border-transparent', isActiveSubmitted); 
+
+            submittedTable.classList.toggle('hidden', !isActiveSubmitted);
+            notSubmittedTable.classList.toggle('hidden', isActiveSubmitted);
+        }
+        
+        function handleReportTabSwitch(activeTab) {
+            const preferencesTab = document.getElementById('tab-preferences');
+            const allocationTab = document.getElementById('tab-allocation');
+            
+            const preferencesContent = document.getElementById('report-tab-preferences');
+            const allocationContent = document.getElementById('report-tab-allocation');
+
+            const isActivePreferences = activeTab.id === 'tab-preferences';
+            
+            preferencesTab.classList.toggle('text-blue-400', isActivePreferences);
+            preferencesTab.classList.toggle('border-blue-400', isActivePreferences);
+            preferencesTab.classList.toggle('text-gray-400', !isActivePreferences);
+            preferencesTab.classList.toggle('hover:text-gray-200', !isActivePreferences);
+            preferencesTab.classList.toggle('border-transparent', !isActivePreferences);
+
+            allocationTab.classList.toggle('text-blue-400', !isActivePreferences); 
+            allocationTab.classList.toggle('border-blue-400', !isActivePreferences);
+            allocationTab.classList.toggle('text-gray-400', isActivePreferences);
+            allocationTab.classList.toggle('hover:text-gray-200', isActivePreferences);
+            allocationTab.classList.toggle('border-transparent', isActivePreferences);
+
+            preferencesContent.classList.toggle('hidden', !isActivePreferences);
+            allocationContent.classList.toggle('hidden', isActivePreferences);
+        }
+        
+        // ### *** NEW *** Function for CGPA Page Tabs ###
+        function handleCgpaTabSwitch(activeTab) {
+            const manualTab = document.getElementById('tab-manual-entry');
+            const uploadTab = document.getElementById('tab-csv-upload');
+            
+            const manualContent = document.getElementById('cgpa-tab-manual');
+            const uploadContent = document.getElementById('cgpa-tab-upload');
+
+            const isActiveManual = activeTab.id === 'tab-manual-entry';
+            
+            manualTab.classList.toggle('text-blue-400', isActiveManual);
+            manualTab.classList.toggle('border-blue-400', isActiveManual);
+            manualTab.classList.toggle('text-gray-400', !isActiveManual);
+            manualTab.classList.toggle('hover:text-gray-200', !isActiveManual);
+            manualTab.classList.toggle('border-transparent', !isActiveManual);
+
+            uploadTab.classList.toggle('text-blue-400', !isActiveManual); 
+            uploadTab.classList.toggle('border-blue-400', !isActiveManual);
+            uploadTab.classList.toggle('text-gray-400', isActiveManual);
+            uploadTab.classList.toggle('hover:text-gray-200', isActiveManual);
+            uploadTab.classList.toggle('border-transparent', isActiveManual);
+
+            manualContent.classList.toggle('hidden', !isActiveManual);
+            uploadContent.classList.toggle('hidden', isActiveManual);
+        }
+        
+        function handleAdminLogin(event) {
+            event.preventDefault();
+            const password = document.getElementById('admin-password').value;
+            if (password === ADMIN_PASSWORD) {
+                adminLoginPage.classList.add('hidden');
+                appDiv.classList.remove('hidden');
+                navigateTo('dashboard');
+                loadCgpaPage(); 
+                loadCoursesPage();
+                loadStatusPage();
+            } else {
+                showError('admin-login-error', 'Invalid password.');
+            }
+        }
+        
+        async function handleDeletePreference(deleteButton) {
+            const registerNumber = deleteButton.dataset.regno;
+            const student = state.preferenceStatus.submitted.find(s => s.RegisterNumber === registerNumber);
+            
+            if (!confirm(`Are you sure you want to delete the preferences for:\n\n${student.Name} (${registerNumber})?\n\nThis will allow them to resubmit.`)) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/admin/delete-preference`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ registerNumber })
+                });
+                
+                if (!response.ok) {
+                    const err = await response.json();
+                    throw new Error(err.message || 'Failed to delete.');
+                }
+                
+                await loadStatusPage(); 
+                
+            } catch (error) {
+                console.error("Error deleting preference:", error);
+                alert(`Error: ${error.message}`);
+            }
+        }
+        
+        // --- *** NEW *** Handle CSV Upload ---
+        async function handleCsvUpload(event) {
+            event.preventDefault();
+            hideError('upload-error');
+            hideSuccess('upload-success');
+            
+            const fileInput = document.getElementById('csv-file-input');
+            const file = fileInput.files[0];
+            const dept = state.uploadDept;
+            
+            if (!file) {
+                showError('upload-error', 'Please select a file to upload.');
+                return;
+            }
+            if (!dept) {
+                showError('upload-error', 'An error occurred. Please select a department again.');
+                return;
+            }
+            
+            toggleSpinner('upload-button-text', 'upload-spinner', true);
+            
+            const formData = new FormData();
+            formData.append('csvFile', file);
+            formData.append('department', dept);
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/admin/upload-cgpa`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                if (!response.ok) {
+                    throw new Error(data.message || 'File upload failed.');
+                }
+                
+                showSuccess('upload-success', data.message);
+                fileInput.value = ''; // Clear the file input
+                
+                // Refresh data in other tabs
+                await loadCgpaPage(); // Await this to get new data
+                await loadStatusPage(); // Await this
+                
+                // After reloading, if a table is visible, re-render it
+                const selectedDeptItem = document.querySelector('.cgpa-dept-item.selected');
+                if (selectedDeptItem) {
+                    renderCgpaTable(selectedDeptItem.dataset.dept);
+                }
+                
+            } catch (error) {
+                showError('upload-error', error.message);
+            } finally {
+                toggleSpinner('upload-button-text', 'upload-spinner', false);
+            }
+        }
+
+        // --- App Initialization ---
+        
+        function main() {
+            appDiv = document.getElementById('app');
+            adminLoginPage = document.getElementById('page-admin-login');
+            
+            pages = {
+                dashboard: document.getElementById('page-dashboard'), 
+                cgpa: document.getElementById('page-cgpa'),
+                courses: document.getElementById('page-courses'),
+                status: document.getElementById('page-status'),
+                report: document.getElementById('page-report'),
+            };
+            headerDashboard = document.getElementById('header-dashboard');
+            headerContext = document.getElementById('header-context');
+            
+            document.getElementById('admin-login-form').addEventListener('submit', handleAdminLogin);
+            
+            // *** NEW *** CSV Upload Form Listener
+            document.getElementById('upload-csv-form').addEventListener('submit', handleCsvUpload);
+
+            
+            const searchInput = document.getElementById('search-status');
+            if (searchInput) {
+                searchInput.addEventListener('input', renderStatusTables);
+            }
+            
+            const list = document.getElementById('cgpa-dept-list');
+            if (list) {
+                list.addEventListener('scroll', () => {
+                    const { scrollTop, scrollHeight, clientHeight } = list;
+                    const topGrad = document.getElementById('cgpa-list-top-gradient');
+                    const bottomGrad = document.getElementById('cgpa-list-bottom-gradient');
+                    
+                    topGrad.style.opacity = Math.min(scrollTop / 50, 1);
+                    const bottomDistance = scrollHeight - (scrollTop + clientHeight);
+                    bottomGrad.style.opacity = scrollHeight <= clientHeight ? 0 : Math.min(bottomDistance / 50, 1);
+                });
+            }
+            
+            const uploadList = document.getElementById('upload-dept-list');
+            if (uploadList) {
+                uploadList.addEventListener('scroll', () => {
+                    const { scrollTop, scrollHeight, clientHeight } = uploadList;
+                    const topGrad = document.getElementById('upload-list-top-gradient');
+                    const bottomGrad = document.getElementById('upload-list-bottom-gradient');
+                    
+                    topGrad.style.opacity = Math.min(scrollTop / 50, 1);
+                    const bottomDistance = scrollHeight - (scrollTop + clientHeight);
+                    bottomGrad.style.opacity = scrollHeight <= clientHeight ? 0 : Math.min(bottomDistance / 50, 1);
+                });
+            }
+        }
+
+        // --- GLOBAL EVENT LISTENERS (Event Delegation) ---
+        document.body.addEventListener('click', function(event) {
+            const target = event.target;
+            
+            const navButton = target.closest('.nav-button');
+            if (navButton) {
+                event.preventDefault();
+                const targetPage = navButton.dataset.target;
+                
+                if (targetPage === 'logout') {
+                    window.location.reload();
+                    return;
+                }
+                
+                if (targetPage) {
+                    navigateTo(targetPage);
+                }
+                return;
+            }
+
+            const saveCgpaBtn = target.closest('.save-cgpa-btn');
+            if (saveCgpaBtn) {
+                event.preventDefault();
+                handleSaveCgpa(saveCgpaBtn);
+                return;
+            }
+
+            const saveCourseBtn = target.closest('.save-course-btn');
+            if (saveCourseBtn) {
+                event.preventDefault();
+                handleSaveCourse(saveCourseBtn);
+                return;
+            }
+
+            const viewPrefsBtn = target.closest('.view-prefs-btn');
+            if (viewPrefsBtn) {
+                event.preventDefault();
+                handleViewPreferences(viewPrefsBtn);
+                return;
+            }
+
+            const statusTab = target.closest('.status-tab');
+            if (statusTab) {
+                event.preventDefault();
+                handleTabSwitch(statusTab);
+                return;
+            }
+            
+            // *** NEW *** CGPA Management Tab
+            const cgpaMgmtTab = target.closest('.cgpa-management-tab');
+            if (cgpaMgmtTab) {
+                event.preventDefault();
+                handleCgpaTabSwitch(cgpaMgmtTab);
+                return;
+            }
+            
+            const cgpaDeptItem = target.closest('.cgpa-dept-item');
+            if (cgpaDeptItem) {
+                event.preventDefault();
+                document.querySelectorAll('.cgpa-dept-item').forEach(item => {
+                    item.classList.remove('selected');
+                });
+                cgpaDeptItem.classList.add('selected');
+                
+                renderCgpaTable(cgpaDeptItem.dataset.dept);
+                return;
+            }
+            
+            const uploadDeptItem = target.closest('.upload-dept-item');
+            if (uploadDeptItem) {
+                event.preventDefault();
+                document.querySelectorAll('.upload-dept-item').forEach(item => {
+                    item.classList.remove('selected');
+                });
+                uploadDeptItem.classList.add('selected');
+                
+                state.uploadDept = uploadDeptItem.dataset.dept;
+                document.getElementById('upload-dept-name').textContent = state.uploadDept;
+                document.getElementById('upload-form-container').classList.remove('hidden');
+                
+                hideError('upload-error');
+                hideSuccess('upload-success');
+                document.getElementById('csv-file-input').value = ''; // Clear file input
+                return;
+            }
+            
+            const deletePrefBtn = target.closest('.delete-pref-btn');
+            if (deletePrefBtn) {
+                event.preventDefault();
+                handleDeletePreference(deletePrefBtn);
+                return;
+            }
+            
+            const reportTab = target.closest('.report-tab');
+            if (reportTab) {
+                event.preventDefault();
+                handleReportTabSwitch(reportTab);
+                return;
+            }
+        });
+
+        // Run the app!
+        document.addEventListener('DOMContentLoaded', main);
+    </script>
+</body>
+</html>

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    
+    <!-- Loads Tailwind offline -->
+    <script src="tailwindcss.js"></script>
+    
+    <!-- Added jsPDF & jsPDF-AutoTable library for PDF Download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+    
+    <style>
+        /* Custom spinner */
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, .1);
+            border-left-color: #FFF;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* --- 3. NEW: Animated Aurora Background --- */
+        body {
+            background-color: #000000; /* Black background */
+            color: #ffffff;
+            position: relative;
+            overflow-x: hidden;
+            /* Offline-safe font */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        /* This pseudo-element creates the aurora */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -10vh; /* Start slightly off-screen */
+            left: 0;
+            width: 100%;
+            height: 60vh; /* Covers top 60% */
+            background: linear-gradient(-45deg, #3A29FF, #FF94B4, #FF3232, #3A29FF);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            filter: blur(120px); 
+            opacity: 0.5;
+            z-index: -1;
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* --- 4. *** MODIFIED *** Glassmorphism Card Style --- */
+        .glass-card {
+            background: rgba(40, 40, 40, 0.4); 
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15); 
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- 5. *** NEW *** Modern Select Box Style --- */
+        .modern-select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            padding-right: 2.5rem;
+        }
+        .modern-select:focus {
+            outline: 2px solid white;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .modern-select option {
+            background-color: #2b2b2b;
+            color: white;
+            border: none;
+        }
+        .modern-select:invalid {
+            color: #b0b0b0;
+        }
+        
+        /* --- Animation Styles --- */
+        .page {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* --- 8. NEW: SF Pro Font --- */
+        .sf-pro-font {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        /* --- 9. NEW: "About" Bubble --- */
+        .about-bubble {
+            position: fixed;
+            top: 2rem;
+            right: 2.5rem;
+            z-index: 999;
+            background: rgba(30, 30, 30, 0.25);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+        }
+        .about-bubble:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* --- 10. *** MODIFIED *** Styles for Confirmation Page --- */
+        #confirm-list {
+            list-style: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: 1fr; /* Default single column */
+            gap: 0.5rem; /* 8px */
+        }
+        /* On medium screens and up, go to 2 columns */
+        @media (min-width: 768px) {
+            #confirm-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        #confirm-list li {
+            background: rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.375rem; /* 6px */
+            padding: 0.5rem 0.75rem; /* 8px 12px */
+            display: flex;
+            align-items: center;
+        }
+        #confirm-list li span {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 0.75rem; /* 12px */
+            font-weight: 600;
+            padding: 0.125rem 0.5rem; /* 2px 8px */
+            border-radius: 999px;
+            margin-right: 0.75rem; /* 12px */
+            min-width: 30px; /* To align numbers */
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body style="font-family: 'Inter', sans-serif;">
+
+    <a href="https://bento.me/abhinavkumarilango" target="_blank" rel="noopener noreferrer" class="about-bubble">
+        About
+    </a>
+
+    <div id="app" class="min-h-screen flex flex-col items-center justify-center p-4">
+
+        <div class="text-center mb-6">
+            <div class="inline-block bg-white/20 text-white p-3 rounded-xl shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.617l-6.394 2.88a1 1 0 000 1.84L9 17.117l6.394-2.88a1 1 0 000-1.84L9 9.617l6.394-2.88a1 1 0 000-1.84l-7-3zM9 11.617l-6-2.7L9 6.217l6 2.7-6 2.7z"/>
+                </svg>
+            </div>
+            <h1 class="text-4xl font-bold text-white mt-4 sf-pro-font">Ancillary Course Portal</h1>
+            <h2 id="portal-subtitle" class="text-xl font-medium text-gray-200">Puducherry Technological University</h2>
+        </div>
+
+        <div class="w-full max-w-md">
+
+            <div id="page-login" class="glass-card p-8 rounded-xl page">
+                <h3 class="text-xl font-semibold text-center text-white">Student Portal</h3>
+                <p class="text-sm text-gray-300 text-center mb-6">Enter your credentials to continue.</p>
+                
+                <form id="login-form">
+                    <div class="mb-4">
+                        <label for="registerNumber" class="block text-sm font-medium text-gray-200 mb-1">Register Number</label>
+                        <input type="text" id="registerNumber" placeholder="e.g., 21BECSE001" class="w-full px-4 py-2 bg-white/10 text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white">
+                    </div>
+                    <div class="mb-6">
+                        <label for="password" class="block text-sm font-medium text-gray-200 mb-1">Password</label>
+                        <input type="password" id="password" placeholder="e.g., Ptu@123" class="w-full px-4 py-2 bg-white/10 text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white">
+                    </div>
+                    <button type="submit" class="w-full bg-white text-gray-900 py-2 rounded-lg font-semibold hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 flex items-center justify-center">
+                        <span id="login-button-text">Continue</span>
+                        <div id="login-spinner" class="spinner hidden"></div>
+                    </button>
+                </form>
+                <div id="login-error" class="hidden mt-4 text-center text-sm text-red-400 bg-red-900/50 p-3 rounded-lg"></div>
+            </div>
+
+            <div id="page-details" class="hidden glass-card p-8 rounded-xl page">
+                <h3 class="text-xl font-semibold text-center text-white mb-6">Student Details</h3>
+                
+                <div class="bg-black/10 border border-white/10 rounded-lg p-4">
+                    <div class="flex justify-between py-2 border-b border-white/10">
+                        <span class="text-sm text-gray-300">Name</span>
+                        <span id="detail-name" class="text-sm font-medium text-white"></span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-white/10">
+                        <span class="text-sm text-gray-300">Register Number</span>
+                        <span id="detail-regno" class="text-sm font-medium text-white"></span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-white/10">
+                        <span class="text-sm text-gray-300">Department</span>
+                        <span id="detail-dept" class="text-sm font-medium text-white"></span>
+                    </div>
+                    <div class="flex justify-between pt-2">
+                        <span class="text-sm text-gray-300">Year</span>
+                        <span id="detail-year" class="text-sm font-medium text-white">2nd Year</span>
+                    </div>
+                </div>
+                
+                <button id="goto-cgpa-btn" class="mt-6 w-full bg-white text-gray-900 py-2 rounded-lg font-semibold hover:bg-gray-200">
+                    Proceed to CGPA Verification
+                </button>
+            </div>
+
+            <div id="page-cgpa" class="hidden glass-card p-8 rounded-xl page">
+                <h3 class="text-xl font-semibold text-center text-white">Enter Your Total CGPA</h3>
+                <p class="text-sm text-gray-300 text-center mb-6">Please enter your current CGPA for verification.</p>
+                
+                <form id="cgpa-form">
+                    <div class="mb-4">
+                        <label for="cgpa" class="block text-sm font-medium text-gray-200 mb-1">CGPA</label>
+                        <input type="number" step="0.01" id="cgpa" placeholder="e.g., 8.5" class="w-full px-4 py-2 bg-white/10 text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white">
+                    </div>
+                    <button type="submit" class="w-full bg-gray-900 text-white py-2 rounded-lg font-semibold hover:bg-gray-700 flex items-center justify-center">
+                        <span id="cgpa-button-text">Verify CGPA</span>
+                        <div id="cgpa-spinner" class="spinner hidden"></div>
+                    </button>
+                </form>
+
+                <div id="cgpa-error" class="hidden mt-4 text-center text-sm text-red-400 bg-red-900/50 p-3 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                    </svg>
+                    <span></span> </div>
+                <div id="cgpa-success" class="hidden mt-4 text-center text-sm text-green-400 bg-green-900/50 p-3 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span>CGPA verified successfully.</span>
+                </div>
+
+                <button id="goto-prefs-btn" class="hidden mt-4 w-full bg-white text-gray-900 py-2 rounded-lg font-semibold hover:bg-gray-200">
+                    Enter Course Preferences
+                </button>
+            </div>
+            
+            <div id="page-submitted" class="hidden glass-card p-8 rounded-xl page">
+                <h3 class="text-xl font-semibold text-center text-white">Preferences Locked</h3>
+                <div class="mt-6 text-center text-green-400 bg-green-900/50 p-4 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="font-medium">You have already submitted your preferences.</p>
+                </div>
+                <p class="text-sm text-gray-300 text-center mt-4">
+                    Your preferences have been recorded. You can now close this window.
+                </p>
+                <button id="logout-btn-1" class="mt-6 w-full bg-gray-700 text-white py-2 rounded-lg font-semibold hover:bg-gray-600">
+                    Logout
+                </button>
+            </div>
+
+        </div> 
+        
+        <!-- *** MODIFIED *** Preference Page -->
+        <div id="page-preferences" class="hidden w-full max-w-2xl page">
+            <div class="glass-card p-8 rounded-xl">
+                <h3 class="text-xl font-semibold text-center text-white">Select Your Department Preferences</h3>
+                <p class="text-sm text-gray-300 text-center mb-6">Rank your preferences from 1 to 8. Each department must be selected once.</p>
+            
+                <form id="preferences-form">
+                    <!-- This grid will be filled by buildPreferenceSelectors() -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                    </div>
+
+                    <button type="submit" class="mt-6 w-full bg-white text-gray-900 py-2 rounded-lg font-semibold hover:bg-gray-200 flex items-center justify-center">
+                        <span id="pref-button-text">Submit Preferences</span>
+                        <div id="pref-spinner" class="spinner hidden"></div>
+                    </button>
+                </form>
+                
+                <div id="pref-error" class="hidden mt-4 text-center text-sm text-red-400 bg-red-900/50 p-3 rounded-lg"></div>
+            </div>
+        </div>
+        
+        <!-- *** MODIFIED *** Confirmation Page (Wider) -->
+        <div id="page-confirmation" class="hidden w-full max-w-2xl page"> <!-- <-- Changed max-w-lg to max-w-2xl -->
+            <div class="glass-card p-8 rounded-xl">
+                <h3 class="text-xl font-semibold text-center text-white">Submission Confirmed</h3>
+                <div class="mt-6 text-center text-green-400 bg-green-900/50 p-4 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="font-medium">Your preferences have been successfully submitted.</p>
+                </div>
+                
+                <!-- Student Details -->
+                <div class="bg-black/10 border border-white/10 rounded-lg p-4 my-6">
+                    <div class="flex justify-between py-2 border-b border-white/10">
+                        <span class="text-sm text-gray-300">Name</span>
+                        <span id="confirm-name" class="text-sm font-medium text-white"></span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-white/10">
+                        <span class="text-sm text-gray-300">Register Number</span>
+                        <span id="confirm-regno" class="text-sm font-medium text-white"></span>
+                    </div>
+                    <div class="flex justify-between pt-2">
+                        <span class="text-sm text-gray-300">Department</span>
+                        <span id="confirm-dept" class="text-sm font-medium text-white"></span>
+                    </div>
+                </div>
+                
+                <!-- Preference List -->
+                <h4 class="text-lg font-semibold text-white mb-2">Your Submitted Preferences:</h4>
+                <ol id="confirm-list">
+                    <!-- Preferences will be injected here by JS -->
+                </ol>
+                
+                <button id="download-pdf-btn" class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500">
+                    Download as PDF
+                </button>
+                <button id="logout-btn-2" class="mt-2 w-full bg-gray-700 text-white py-2 rounded-lg font-semibold hover:bg-gray-600">
+                    Logout
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // --- Configuration ---
+        const API_BASE_URL = '/api'; 
+
+        // --- State ---
+        const state = {
+            currentPage: 'page-login',
+            registerNumber: null,
+            studentDetails: null,
+            allDepartments: [], // This will hold all 9 departments
+            availableDepartments: [], // This will hold the 8 for the dropdown
+            selectedPreferences: {}
+        };
+
+        // --- DOM Elements ---
+        const pages = {
+            login: document.getElementById('page-login'),
+            details: document.getElementById('page-details'),
+            cgpa: document.getElementById('page-cgpa'),
+            preferences: document.getElementById('page-preferences'),
+            submitted: document.getElementById('page-submitted'),
+            confirmation: document.getElementById('page-confirmation'),
+        };
+
+        const loginForm = document.getElementById('login-form');
+        const cgpaForm = document.getElementById('cgpa-form');
+        const preferencesForm = document.getElementById('preferences-form');
+
+        // --- Utility Functions ---
+
+        function navigateTo(pageId) {
+            Object.values(pages).forEach(page => page.classList.add('hidden'));
+            const targetPage = pages[pageId];
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+                state.currentPage = pageId;
+            } else {
+                console.error(`Page not found: ${pageId}`);
+                pages.login.classList.remove('hidden');
+            }
+        }
+
+        function showError(elementId, message) {
+            const errorEl = document.getElementById(elementId);
+            if(elementId === 'cgpa-error') {
+                errorEl.querySelector('span').textContent = message;
+            } else {
+                errorEl.textContent = message;
+            }
+            errorEl.classList.remove('hidden');
+        }
+
+        function hideError(elementId) {
+            document.getElementById(elementId).classList.add('hidden');
+        }
+        
+        function showSuccess(elementId) {
+            document.getElementById(elementId).classList.remove('hidden');
+        }
+        
+        function hideSuccess(elementId) {
+            document.getElementById(elementId).classList.add('hidden');
+        }
+
+        function toggleSpinner(buttonTextId, spinnerId, isLoading) {
+            const textEl = document.getElementById(buttonTextId);
+            const spinnerEl = document.getElementById(spinnerId);
+            if (isLoading) {
+                textEl.classList.add('hidden');
+                spinnerEl.classList.remove('hidden');
+            } else {
+                textEl.classList.remove('hidden');
+                spinnerEl.classList.add('hidden');
+            }
+        }
+        
+        function logout() {
+            state.registerNumber = null;
+            state.studentDetails = null;
+            state.selectedPreferences = {};
+            
+            loginForm.reset();
+            cgpaForm.reset();
+            preferencesForm.reset();
+            
+            hideError('login-error');
+            hideError('cgpa-error');
+            hideSuccess('cgpa-success');
+            hideError('pref-error');
+            
+            document.getElementById('goto-prefs-btn').classList.add('hidden');
+            
+            navigateTo('login');
+        }
+
+        // --- API Functions ---
+
+        // *** MODIFIED: Now accepts studentDept to filter against ***
+        async function fetchAllDepartments(studentDept) {
+            try {
+                const response = await fetch(`${API_BASE_URL}/courses`);
+                if (!response.ok) throw new Error('Failed to fetch departments.');
+                
+                const data = await response.json();
+                state.allDepartments = data.departments;
+                
+                // *** MODIFIED: Uses passed-in studentDept ***
+                if (studentDept) {
+                    state.availableDepartments = state.allDepartments.filter(
+                        dept => dept.code !== studentDept
+                    );
+                } else {
+                    state.availableDepartments = state.allDepartments;
+                }
+                
+            } catch (error) {
+                console.error('Error fetching departments:', error);
+                showError('pref-error', 'Could not load departments. Please reload the page.');
+            }
+        }
+
+        async function fetchStudentDetails(registerNumber) {
+            try {
+                const response = await fetch(`${API_BASE_URL}/student/details/${registerNumber}`);
+                if (!response.ok) throw new Error('Failed to fetch student details.');
+                
+                const data = await response.json();
+                state.studentDetails = data; // Set the global state
+                
+                document.getElementById('detail-name').textContent = data.Name;
+                document.getElementById('detail-regno').textContent = data.RegisterNumber;
+                document.getElementById('detail-dept').textContent = data.Department;
+                
+                return data; // Return data for the login function
+            } catch (error) {
+                console.error('Error fetching details:', error);
+                showError('login-error', 'Could not fetch your details. Please try again.');
+                logout();
+            }
+        }
+
+        // --- Event Handlers ---
+
+        // *** THIS FUNCTION IS MODIFIED ***
+        async function handleLogin(event) {
+            event.preventDefault();
+            hideError('login-error');
+            toggleSpinner('login-button-text', 'login-spinner', true);
+
+            const registerNumber = document.getElementById('registerNumber').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/student/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ registerNumber, password })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.message || 'Login failed.');
+                }
+
+                state.registerNumber = data.registerNumber;
+                
+                // *** THIS IS THE NEW LOGIC ***
+                if (data.hasSubmitted) {
+                    // 1. Set student details in state
+                    state.studentDetails = data.studentDetails;
+                    
+                    // 2. Fetch all departments, passing the student's own dept to filter
+                    await fetchAllDepartments(data.studentDetails.Department); 
+                    
+                    // 3. Populate confirmation page (which now safely uses state.studentDetails)
+                    populateConfirmationPage(data.preferences);
+                    navigateTo('confirmation');
+                } else {
+                    // This is a first-time login
+                    await fetchStudentDetails(state.registerNumber);
+                    navigateTo('details');
+                }
+
+            } catch (error) {
+                showError('login-error', error.message);
+            } finally {
+                toggleSpinner('login-button-text', 'login-spinner', false);
+            }
+        }
+
+        async function handleCgpaVerify(event) {
+            event.preventDefault();
+            hideError('cgpa-error');
+            hideSuccess('cgpa-success');
+            document.getElementById('goto-prefs-btn').classList.add('hidden');
+            toggleSpinner('cgpa-button-text', 'cgpa-spinner', true);
+
+            const cgpa = document.getElementById('cgpa').value;
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/student/verify-cgpa`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ registerNumber: state.registerNumber, cgpa: cgpa })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.message || 'CGPA verification failed.');
+                }
+
+                showSuccess('cgpa-success');
+                document.getElementById('goto-prefs-btn').classList.remove('hidden');
+
+            } catch (error) {
+                showError('cgpa-error', error.message);
+            } finally {
+                toggleSpinner('cgpa-button-text', 'cgpa-spinner', false);
+            }
+        }
+        
+        async function handlePreferenceSubmit(event) {
+            event.preventDefault();
+            hideError('pref-error');
+            
+            const preferenceValues = Object.values(state.selectedPreferences);
+            if(preferenceValues.length < 8) {
+                showError('pref-error', 'You must select all 8 preferences.');
+                return;
+            }
+            
+            const uniqueValues = new Set(preferenceValues);
+            if (uniqueValues.size < 8) {
+                showError('pref-error', 'You cannot select the same department twice.');
+                return;
+            }
+
+            toggleSpinner('pref-button-text', 'pref-spinner', true);
+
+            try {
+                const finalPreferences = [];
+                for (let i = 1; i <= 8; i++) {
+                    finalPreferences.push(state.selectedPreferences[`pref-${i}`]);
+                }
+                
+                const response = await fetch(`${API_BASE_URL}/student/submit-preferences`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        registerNumber: state.registerNumber, 
+                        preferences: finalPreferences
+                    })
+                });
+                
+                const data = await response.json();
+                if (!response.ok) {
+                    throw new Error(data.message || 'Failed to submit preferences.');
+                }
+
+                populateConfirmationPage(finalPreferences);
+                navigateTo('confirmation');
+
+            } catch (error) {
+                showError('pref-error', error.message);
+            } finally {
+                toggleSpinner('pref-button-text', 'pref-spinner', false);
+            }
+        }
+
+        // --- Preference Dropdown Logic ---
+
+        function updatePreferenceDropdowns() {
+            const selectedValues = new Set(Object.values(state.selectedPreferences));
+            const allSelects = document.querySelectorAll('.preference-select');
+            
+            allSelects.forEach(select => {
+                const currentSelectValue = select.value;
+                
+                while (select.options.length > 1) {
+                    select.remove(1);
+                }
+                
+                state.availableDepartments.forEach(dept => {
+                    if (dept.code === currentSelectValue || !selectedValues.has(dept.code)) {
+                        const option = document.createElement('option');
+                        option.value = dept.code;
+                        option.textContent = dept.name;
+                        select.appendChild(option);
+                    }
+                });
+                
+                select.value = currentSelectValue;
+            });
+        }
+
+        function buildPreferenceSelectors() {
+            const container = preferencesForm.querySelector('.grid');
+            container.innerHTML = ''; 
+            
+            for (let i = 1; i <= 8; i++) {
+                const preferenceId = `pref-${i}`;
+                
+                const html = `
+                    <div class="pref-container relative">
+                        <label for="${preferenceId}" class="block text-sm font-medium text-gray-200 mb-1">Preference ${i}</label>
+                        <select id="${preferenceId}" name="${preferenceId}" class="preference-select modern-select" required>
+                            <option value="" disabled selected>Select department</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-0 top-6 flex items-center px-3 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += html;
+            }
+            
+            document.querySelectorAll('.preference-select').forEach(select => {
+                select.addEventListener('change', (event) => {
+                    const id = event.target.id;
+                    const value = event.target.value;
+                    
+                    if (value) {
+                        state.selectedPreferences[id] = value;
+                    } else {
+                        delete state.selectedPreferences[id];
+                    }
+                    
+                    updatePreferenceDropdowns();
+                });
+            });
+        }
+        
+        // --- *** MODIFIED *** Confirmation Page Functions ---
+        
+        function populateConfirmationPage(preferences) {
+            // *** THIS IS THE FIX ***
+            // Ensure state.studentDetails is valid before reading from it.
+            if (!state.studentDetails) {
+                console.error("Student details are missing!");
+                showError('login-error', 'Could not load student details. Please log out and try again.');
+                navigateTo('login');
+                return;
+            }
+            
+            document.getElementById('confirm-name').textContent = state.studentDetails.Name;
+            document.getElementById('confirm-regno').textContent = state.studentDetails.RegisterNumber;
+            document.getElementById('confirm-dept').textContent = state.studentDetails.Department;
+            
+            const listElement = document.getElementById('confirm-list');
+            listElement.innerHTML = ''; 
+            
+            preferences.forEach((deptCode, index) => {
+                // Find the full name from the original list of 9
+                const dept = state.allDepartments.find(d => d.code === deptCode);
+                const li = document.createElement('li');
+                li.innerHTML = `<span>P${index + 1}</span> ${dept ? dept.name : "N/A"}`;
+                listElement.appendChild(li);
+            });
+        }
+
+        // --- *** MODIFIED *** PDF Download Function ---
+        function handleDownloadPdf() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            const name = document.getElementById('confirm-name').textContent;
+            const regNo = document.getElementById('confirm-regno').textContent;
+            const dept = document.getElementById('confirm-dept').textContent;
+            
+            // --- Title ---
+            doc.setFontSize(20);
+            doc.text("Ancillary Course Preference Submission", 105, 25, { align: 'center' });
+            
+            // --- Student Details Table ---
+            const studentBody = [
+                ['Name', name],
+                ['Register Number', regNo],
+                ['Department', dept],
+            ];
+            
+            doc.autoTable({
+                startY: 40,
+                head: [['Student Details', '']],
+                body: studentBody,
+                headStyles: { fillColor: [68, 76, 95] }, // Dark grey header
+                theme: 'striped'
+            });
+
+            // --- Preferences Table ---
+            const listItems = document.querySelectorAll('#confirm-list li');
+            const prefBody = [];
+            listItems.forEach(item => {
+                const prefNumber = item.querySelector('span').innerText;
+                const courseName = item.innerText.replace(prefNumber, '').trim();
+                prefBody.push([prefNumber, courseName]);
+            });
+
+            doc.autoTable({
+                startY: doc.lastAutoTable.finalY + 15, // Start after the first table
+                head: [['Preference', 'Course']],
+                body: prefBody,
+                headStyles: { fillColor: [41, 128, 185] }, // Blue header
+                theme: 'grid'
+            });
+            
+            doc.save(`Ancillary_Preferences_${regNo}.pdf`);
+        }
+
+        // --- App Initialization ---
+
+        async function main() {
+            loginForm.addEventListener('submit', handleLogin);
+            cgpaForm.addEventListener('submit', handleCgpaVerify);
+            preferencesForm.addEventListener('submit', handlePreferenceSubmit);
+
+            document.getElementById('goto-cgpa-btn').addEventListener('click', () => {
+                navigateTo('cgpa');
+            });
+            
+            document.getElementById('goto-prefs-btn').addEventListener('click', async () => {
+                // Pass the student's dept to filter *before* building selectors
+                await fetchAllDepartments(state.studentDetails.Department); 
+                buildPreferenceSelectors();
+                updatePreferenceDropdowns();
+                navigateTo('preferences');
+            });
+            
+            document.getElementById('logout-btn-1').addEventListener('click', logout);
+            document.getElementById('logout-btn-2').addEventListener('click', logout);
+            document.getElementById('download-pdf-btn').addEventListener('click', handleDownloadPdf);
+            
+            navigateTo('login');
+        }
+
+        document.addEventListener('DOMContentLoaded', main);
+
+    </script>
+</body>
+</html>

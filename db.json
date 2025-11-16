@@ -1,0 +1,5041 @@
+{
+  "students": [
+    {
+      "RegisterNumber": "2201106057",
+      "Name": "ROSHAN  SEDHU   D",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106001",
+      "Name": "ABINAYA  S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106002",
+      "Name": "ABIRAMI S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106003",
+      "Name": "AGILAN   V",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106004",
+      "Name": "AKSA M PRINCE",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106005",
+      "Name": "AKULA SNIGDHA SRASHANTHI",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106006",
+      "Name": "ANAMIKA",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106007",
+      "Name": "ANBUMANI P",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106008",
+      "Name": "ANITHA K",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106009",
+      "Name": "ARCHANA J",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106010",
+      "Name": "ARCHANA S RAJEE",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106011",
+      "Name": "ASHWATH   S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106012",
+      "Name": "BARATH KUMAR P",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106013",
+      "Name": "BUVANESH  S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106014",
+      "Name": "BULLO NIKUNG",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106015",
+      "Name": "CABILAN C",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106016",
+      "Name": "CHANGKONG  APUM",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106018",
+      "Name": "DARE  TAGU",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106019",
+      "Name": "DEEPIKA SHREE S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106020",
+      "Name": "DEEPIKA V",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106021",
+      "Name": "DEVADHARSHAN K",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106022",
+      "Name": "DHEEPAK R",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106023",
+      "Name": "DHEEPIKA B",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106024",
+      "Name": "DHINESH J",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106025",
+      "Name": "EMPEEYA  PERTIN",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106026",
+      "Name": "GOPIKA S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106027",
+      "Name": "IRFAN   S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106028",
+      "Name": "JAINANDHEESWAR K G",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106029",
+      "Name": "JANNATH BEEBI N",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106030",
+      "Name": "JAYADHEEP  G",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106032",
+      "Name": "JONNADA VISHAL NAARAYANA",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106033",
+      "Name": "KAMADI GANGADRI",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106034",
+      "Name": "KANAPARTHI GOWRI",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106035",
+      "Name": "KIRUTHIGA K",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106036",
+      "Name": "KOKILA   S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106037",
+      "Name": "KOKKULA KUNDANIKA",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106038",
+      "Name": "LAKSHANA   G",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106039",
+      "Name": "LOHITH ANWIN S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106040",
+      "Name": "LOVELY KUMARI",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106041",
+      "Name": "MAGESWERY S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106042",
+      "Name": "MAKESHWARI A",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106043",
+      "Name": "MALEPATI JASHMITHA",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106044",
+      "Name": "MAYANK VIJAY TOMAR",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106045",
+      "Name": "MEGAVARSHINI M",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106046",
+      "Name": "MOHNISH KUMAR S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106047",
+      "Name": "MONEESWARAN   R",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106048",
+      "Name": "PHAYI LOMA  REBE",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106049",
+      "Name": "PRADEEP KUMAR  S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106051",
+      "Name": "PRAVEEN RAJ  R",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106052",
+      "Name": "PREETHI P",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106053",
+      "Name": "RAGULRAJI   C",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106054",
+      "Name": "RAGUNA",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106055",
+      "Name": "RAKESH A",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106056",
+      "Name": "RAMANAN CA",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106057",
+      "Name": "SANIYA A",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106058",
+      "Name": "SANJAISELVAN   T",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106059",
+      "Name": "SANJAY A",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106060",
+      "Name": "SATHISH   S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106061",
+      "Name": "SENTAMIL",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106062",
+      "Name": "SHARLIE DESSAINTS G",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106063",
+      "Name": "SHARUN JOSEPH S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106064",
+      "Name": "SINDHUJA D",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106065",
+      "Name": "SIVAHARINI R",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106066",
+      "Name": "SRIRAM V",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106067",
+      "Name": "SURAMPUDI BHARGAVA LAKSHMAN",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106068",
+      "Name": "SWETHA  SHRI   S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106069",
+      "Name": "TSEWANG  GYALTSAN",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106070",
+      "Name": "THONDALADINNE VIVEK",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106071",
+      "Name": "THUMMALA HARITHA",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106073",
+      "Name": "V LVANISH",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106074",
+      "Name": "VAMSHARAJ PAVANI",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106075",
+      "Name": "VANATHI   C",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106076",
+      "Name": "VELAVADASAN V",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106077",
+      "Name": "VENKATESH A",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106078",
+      "Name": "VINAYAK V",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106079",
+      "Name": "VISHAL KUMAR S",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106080",
+      "Name": "VOLETI ARJUN RAJU",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106081",
+      "Name": "MALLADI  SAI  VINAY",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401106082",
+      "Name": "PALEPU  MANOHAR  SATEESH",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401206001",
+      "Name": "SACHIN V",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401206002",
+      "Name": "PARAMASIVAM   K",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401206003",
+      "Name": "VIGNESHVARAN   T",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401206004",
+      "Name": "DHARANIDHARAN K",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401206005",
+      "Name": "MADDA SATHWIK",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401206006",
+      "Name": "SRIDHAR L",
+      "Department": "CE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104002",
+      "Name": "ASHEEKA A",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104003",
+      "Name": "AUGASTINDEVAKUMAR D",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104004",
+      "Name": "DHARANEESHWARAN   S",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104005",
+      "Name": "DHARSHAN S",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104006",
+      "Name": "DHIKSHITA B",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104007",
+      "Name": "DHINESH KUMAR R",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104008",
+      "Name": "GOKULAKRISHNAN   K",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104009",
+      "Name": "GUNASEELAN   E",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104010",
+      "Name": "HARINI NACHIAR G",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104011",
+      "Name": "HARINI P",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104012",
+      "Name": "HARSHAVARDHAN RB",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104013",
+      "Name": "HEMAPRIYAN V",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104014",
+      "Name": "JAYANTH H",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104015",
+      "Name": "JEEVITHA V",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104016",
+      "Name": "KARTHIKEYAN   P",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104017",
+      "Name": "KATHIR R",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104018",
+      "Name": "KEERTHANA V P",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104019",
+      "Name": "MAHATI  MADHULIKA   S  B",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104020",
+      "Name": "MANIKANNAN   P",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104021",
+      "Name": "MANOJ T",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104022",
+      "Name": "MUHAMMED RAHAD",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104023",
+      "Name": "NARESH P",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104024",
+      "Name": "NAVEEN KUMAR S",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104025",
+      "Name": "NIRANJAN   B",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104027",
+      "Name": "POOVARASI K",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104028",
+      "Name": "PRABAKARAN  S",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104029",
+      "Name": "PRADEEP KUMAR S",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104030",
+      "Name": "PRASANNAKUMAR S",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104031",
+      "Name": "PRIYANKADEVI E",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104032",
+      "Name": "PUSPHA RAJ  P",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104033",
+      "Name": "RAJAGOUROU   A",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104035",
+      "Name": "ROSHNI A",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104036",
+      "Name": "S INDHUJA",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104038",
+      "Name": "SAMITTAA  V",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104039",
+      "Name": "SANJEEV V",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104040",
+      "Name": "SATHYASRI A",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104041",
+      "Name": "SHANTHINI   G",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104042",
+      "Name": "SHRI MATHI M",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104043",
+      "Name": "SIOBHAN MARY J",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104044",
+      "Name": "SIVARAM   S",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104045",
+      "Name": "SOFHIA JOSLINE T",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104046",
+      "Name": "SRIRAM P",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104047",
+      "Name": "SRUDHI O",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104048",
+      "Name": "THARUN R",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104049",
+      "Name": "THASLIMA M",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104050",
+      "Name": "VIDHYAREVATHY  SRIDHARAN",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104051",
+      "Name": "VIGNESH D",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104052",
+      "Name": "VISHWA I",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104054",
+      "Name": "YOGESH   S",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401104055",
+      "Name": "VIJAY    R",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401204001",
+      "Name": "ASHVIN   G",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401204002",
+      "Name": "ROHINTH   S  K",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401204003",
+      "Name": "VIGNESH   K",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401204004",
+      "Name": "VISHNUVARDHAN V",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401204005",
+      "Name": "SABARI GIRI P",
+      "Department": "CHE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2301107002",
+      "Name": "ADITHYAN K",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2301107040",
+      "Name": "KAMALESH   R",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2301107092",
+      "Name": "SITHEESHWARAN",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107001",
+      "Name": "A VIGNEASHWARANE",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107002",
+      "Name": "ABHEJIT   G",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107003",
+      "Name": "ABISHEK C S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107004",
+      "Name": "AKASH S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107005",
+      "Name": "AKHIL RAM P",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107006",
+      "Name": "ANANGI ADITYA VARDHAN",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107007",
+      "Name": "ANIRUDH M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107008",
+      "Name": "ARAVIND RAJA J",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107009",
+      "Name": "ARCHANA M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107010",
+      "Name": "BALA SARAVANAN J",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107011",
+      "Name": "BANDREDDI JEVARDHAN",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107012",
+      "Name": "BHARAT  RAM",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107013",
+      "Name": "BODHARNI G",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107014",
+      "Name": "BUJIREDDY VENKATA LOHITH REDDY",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107015",
+      "Name": "BURIDI SHYAM SRI SAI GOPI MANOHAR",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107016",
+      "Name": "CHOWDAM PUNEETH",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107017",
+      "Name": "DEVADITHYA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107018",
+      "Name": "DEVENDER DUPLIEX S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107019",
+      "Name": "DHANAJI KUMAR DUBEY",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107020",
+      "Name": "DHANASEKAR R",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107021",
+      "Name": "DHANYA SRI S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107022",
+      "Name": "DHEERAVATH JAI SAI TEJA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107023",
+      "Name": "DINTAKURTHY NAGABABU",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107024",
+      "Name": "FATHIMA ZIBA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107025",
+      "Name": "GIRISH KUMAR REDDY G",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107026",
+      "Name": "GYAN GUNJAN",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107027",
+      "Name": "HARIRAJ G",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107029",
+      "Name": "HEMACHANTHRAN M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107030",
+      "Name": "HEMAPPRIYA   A",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107031",
+      "Name": "INIYA SELVAKUMARAN",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107032",
+      "Name": "JEEVASREE S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107033",
+      "Name": "KAKI SRI SREYA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107034",
+      "Name": "KALAISELVAN B",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107035",
+      "Name": "KAMIDI AKHIL",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107036",
+      "Name": "KONA ANJANEYULU",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107037",
+      "Name": "MALLE PRATHYUSHA SREE",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107038",
+      "Name": "MAMILLA VINAY KUMAR",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107039",
+      "Name": "MOHIT V",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107041",
+      "Name": "PANTADI TEJESH",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107042",
+      "Name": "PESINGI HARINI SRIJA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107043",
+      "Name": "PRAVEEN M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107044",
+      "Name": "PREETHINI V",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107045",
+      "Name": "PRIYANKA S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107046",
+      "Name": "RAKSHANA S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107047",
+      "Name": "REKADI PRASAD",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107048",
+      "Name": "SAMEEMA BANU H",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107049",
+      "Name": "SANDHRU K",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107050",
+      "Name": "SARAN K",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107051",
+      "Name": "SHALINI M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107052",
+      "Name": "SHARGURUNATHAN S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107053",
+      "Name": "SUBARNA A",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107054",
+      "Name": "SUBASHINI SREE R",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107055",
+      "Name": "SUBIKSHA T",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107056",
+      "Name": "SUNEETHA R",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107057",
+      "Name": "SUPRIYA M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107058",
+      "Name": "SURYAKUMAR K",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107059",
+      "Name": "THARANI I",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107060",
+      "Name": "YOGESH S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107061",
+      "Name": "YUVARAAJ M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401207002",
+      "Name": "JOSHUA     T",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107123",
+      "Name": "ASHWINIYA R",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107062",
+      "Name": "BALAMURUGAN T",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107063",
+      "Name": "DEEPTHI   M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107064",
+      "Name": "DHINESHRAJ   D",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107065",
+      "Name": "EZHILARASAN  -  CIWGC",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107066",
+      "Name": "G   AMIRDAVARSHINI",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107067",
+      "Name": "GOPESHWAR M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107069",
+      "Name": "JAISHREE A",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107070",
+      "Name": "JEISHVANTH B",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107071",
+      "Name": "JERISHA CICIL",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107072",
+      "Name": "K VIDOOR",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107073",
+      "Name": "KISHORE   C",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107074",
+      "Name": "KOROUNGANBA  AKOIJAM",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107075",
+      "Name": "KRITHIKA  K",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107076",
+      "Name": "LOKESH T",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107077",
+      "Name": "MADHAVAN J",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107078",
+      "Name": "MALLADI  NAGA  SIREESHA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107079",
+      "Name": "MARELLA  SRI  RAM",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107080",
+      "Name": "MARRIPADU GEETHIKA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107081",
+      "Name": "MEKHALA S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107083",
+      "Name": "MOHNEESH KUMAR U",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107084",
+      "Name": "MONISHA L",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107085",
+      "Name": "MOUHAMAD IRFAN  - CIWGC",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107086",
+      "Name": "MUKESH   N",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107087",
+      "Name": "NIKHIL BHAMU",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107088",
+      "Name": "NITHIN GM",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107089",
+      "Name": "NITHYASRI M",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107090",
+      "Name": "P KAVYA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107091",
+      "Name": "PACHA SAI SHIVA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107092",
+      "Name": "PADALA MOKSHITH",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107093",
+      "Name": "PALLE UMESH",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107094",
+      "Name": "PEELETI HARSHA VARDHAN",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107095",
+      "Name": "PRATHIPATI MALLESH",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107096",
+      "Name": "PREETHII V",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107097",
+      "Name": "PUNYA RAJEEVAN",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107098",
+      "Name": "R LAKSHMI BAI",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107099",
+      "Name": "R S SUGANDHA PADMASRI",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107100",
+      "Name": "R. DINESH  KARTHIK",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107101",
+      "Name": "RAGURAM V",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107102",
+      "Name": "RAJABOINA SAI YASWANTH",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107103",
+      "Name": "RAMAVATH ROHITH",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107104",
+      "Name": "RAVINTHAR T R",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107105",
+      "Name": "RIDA SAHIR",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107106",
+      "Name": "RIKKISHA R",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107107",
+      "Name": "S GOPIYANAN",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107108",
+      "Name": "SANJAY RAMPREM S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107109",
+      "Name": "SARAN S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107110",
+      "Name": "SATYAM KUMAR SINGH",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107111",
+      "Name": "SHAIK MUZAMIL",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107112",
+      "Name": "SUBA NITHIYANANTH P",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107113",
+      "Name": "SUNDARARENGAN",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107116",
+      "Name": "TARUNEKA SREE",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107117",
+      "Name": "TENALI LOKESH",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107118",
+      "Name": "VADLAMANI SIREESHA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107119",
+      "Name": "VAMSHI KRISHNA SAMALA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107120",
+      "Name": "VISHAL PUROHIT",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107121",
+      "Name": "X ANNE CELESTINA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401107122",
+      "Name": "YUGHAWIN GABRIEL SANTOSH A",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401207001",
+      "Name": "GELLA  TANYA  SRI KAMALA SUNANDA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401207003",
+      "Name": "PAVITHRA   P",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401207004",
+      "Name": "PRADEEP   G",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401207005",
+      "Name": "PYDIKONDALA PAVANI MAHALAKSHMI  KRUPA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401207006",
+      "Name": "SATHIASREE   S",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109001",
+      "Name": "ADITYA RAJ",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109002",
+      "Name": "AJAY C",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109003",
+      "Name": "ALLAM GUNA BHAVISHYA",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109004",
+      "Name": "ANANYA VERMA",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109005",
+      "Name": "ANBARASU A",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109006",
+      "Name": "ANISHKA V",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109007",
+      "Name": "ARMS  JOVIAN   A",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109008",
+      "Name": "ARSH NAWAS A",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109009",
+      "Name": "ARULMOZHI I",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109010",
+      "Name": "BALAMURUGAN S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109011",
+      "Name": "BANDARU SIVAMANI",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109012",
+      "Name": "BHAVESH KUMAR DHRUW",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109013",
+      "Name": "BOVILLA PAVAN KUMAR REDDY",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109014",
+      "Name": "DEEPIKA A",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109015",
+      "Name": "DHARANIGUHAN J",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109016",
+      "Name": "DHIVYASHRI   J",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109017",
+      "Name": "DHURMUKESH S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109018",
+      "Name": "DITHI DINESH",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109019",
+      "Name": "ELAVARASAN V",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109020",
+      "Name": "GANTA BRAHARI",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109021",
+      "Name": "GOLLAPALLI ABHILAASH",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109022",
+      "Name": "GOPIKRISHNAN S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109023",
+      "Name": "HARSHITA S KALLIMANI",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109024",
+      "Name": "HIMNISH",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109025",
+      "Name": "JAISRI R",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109026",
+      "Name": "JARPULA RAJESH",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109027",
+      "Name": "JEEVITHAN D",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109028",
+      "Name": "K GIRIJA",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109029",
+      "Name": "KARRE SURESH",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109030",
+      "Name": "KAUSIGAN K",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109031",
+      "Name": "KAVIPRIYAA I",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109032",
+      "Name": "KEERTHIKUMAR M G",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109033",
+      "Name": "KETHIREDDY ABHINASH REDDY",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109034",
+      "Name": "KIRANKUMAR   A",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109035",
+      "Name": "KISHORE SHAM H",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109036",
+      "Name": "KOWSIKA S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109037",
+      "Name": "LETHEUKKA K R",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109038",
+      "Name": "LINGAM VIJAY",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109039",
+      "Name": "LOGESHWAR R",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109040",
+      "Name": "MARNENI HARSHINI",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109041",
+      "Name": "MATHUMKAR  SANJITH",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109042",
+      "Name": "NARESHRAJA K",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109043",
+      "Name": "NAVEENKUMAR P",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109044",
+      "Name": "PERABATHULA UDAY BHASKARA KALYANI",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109045",
+      "Name": "RATHNA SRI S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109046",
+      "Name": "RITHIKA B",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109047",
+      "Name": "RITHVIK R",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109048",
+      "Name": "RYAN GOMEZ F",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109049",
+      "Name": "SANTHOSH  KUMAR   S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109050",
+      "Name": "SHANGARI SANKARGANESH",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109051",
+      "Name": "SIVAKUMARAN S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109052",
+      "Name": "SUBA LAKSHMI K",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109053",
+      "Name": "SUBA S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109054",
+      "Name": "SUNDHARESAN P",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109055",
+      "Name": "SURIYAPRABHA C",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109056",
+      "Name": "THARUNKUMAR R",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109057",
+      "Name": "THEVASREE C R",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109058",
+      "Name": "THIRU  KARTHIGAI   VELAN    M",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109059",
+      "Name": "VARUN S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109060",
+      "Name": "WILFRED G",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109061",
+      "Name": "YOKALATCHOUMY N",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2301109018",
+      "Name": "BENDANGSENEP JAMIR",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109123",
+      "Name": "ADWAITH M",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109062",
+      "Name": "BALAJI GUNASEKARAN",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109063",
+      "Name": "BISWAJIT  E",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109064",
+      "Name": "C S SHIVANI",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109065",
+      "Name": "D RITHIK",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109066",
+      "Name": "DHARSHIKA T",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109068",
+      "Name": "DHIVYADARSHINI D",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109069",
+      "Name": "DIVYADHARSHINI J",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109070",
+      "Name": "GANGA DHAR SHARMA",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109071",
+      "Name": "GOPI  GANESH   J",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109072",
+      "Name": "GOVARDHAN G",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109073",
+      "Name": "ILAKIYA K",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109074",
+      "Name": "JEEVARATHINAM V",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109076",
+      "Name": "KANISH T",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109077",
+      "Name": "KAVIYARASAN  P",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109079",
+      "Name": "MATTHEW  JEYARAJ    S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109080",
+      "Name": "METHUN BALAJI D",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109081",
+      "Name": "MOHAMED OLIDE S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109082",
+      "Name": "MUTHUMULA VISHNU VARDHAN REDDY",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109084",
+      "Name": "NAREN KARTHIK K",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109085",
+      "Name": "NARENDRA R",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109086",
+      "Name": "NETHRA V",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109087",
+      "Name": "NINGTHOUJAM  SHILHENBA  SINGH",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109088",
+      "Name": "NISHANTH A",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109089",
+      "Name": "PALTHYA PRAVEEN KUMAR NAIK",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109090",
+      "Name": "PESALA JARUSHA",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109091",
+      "Name": "PIUS XAVIER A",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109092",
+      "Name": "POOJA S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109093",
+      "Name": "PORSETTI ANJANNA",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109094",
+      "Name": "PRAJANA DEVY V",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109095",
+      "Name": "PRIYAN K",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109096",
+      "Name": "PUVVALA MANIDEEP",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109097",
+      "Name": "R A RUKHSHANA",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109101",
+      "Name": "ROHAN T",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109103",
+      "Name": "SANTHOSHRAJAN P",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109104",
+      "Name": "SHAKTHIABIRAMI M",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109106",
+      "Name": "SHIVANI   K",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109107",
+      "Name": "SHIVANI ARUN",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109108",
+      "Name": "SHRI VANDHANA B",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109109",
+      "Name": "SIVASAKTHIBALAN    S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109110",
+      "Name": "SREE MATHI S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109111",
+      "Name": "SRIJAN D",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109112",
+      "Name": "SRIRAM R",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109113",
+      "Name": "SRIRAM S",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109114",
+      "Name": "SUHANEE SINGH",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109115",
+      "Name": "SUJITHA  T",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109117",
+      "Name": "THAMREEN REHANA M",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109118",
+      "Name": "THARUNIKA T",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109119",
+      "Name": "VASANTHAKUMAR S V",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109120",
+      "Name": "VEDHAKSHARI PRALAYAKAVERI",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401109122",
+      "Name": "YUGESH M",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401209001",
+      "Name": "BARATH   K",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401209002",
+      "Name": "DHAKSHINA  MURTHY",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401209003",
+      "Name": "HEMACHANDIRANE   M",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401209004",
+      "Name": "JANANI   J",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401209005",
+      "Name": "SATHISHKUMAR   R",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401209006",
+      "Name": "SOWMIYA   K",
+      "Department": "ECE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108001",
+      "Name": "AALOKH S JEETHESH",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108002",
+      "Name": "ABIRAMI P",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108003",
+      "Name": "AD SSARVIKA",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108004",
+      "Name": "AJAY MURUGAN D",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108005",
+      "Name": "ANAMIKA T",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108006",
+      "Name": "ANNICK PAULINE T",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108007",
+      "Name": "ARISRI",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108008",
+      "Name": "BAVANA U",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108009",
+      "Name": "BHARATH    A",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108010",
+      "Name": "BRINNA   M  L",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108011",
+      "Name": "CALACHANDIRAVENI S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108012",
+      "Name": "DARSHID V",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108013",
+      "Name": "DEEPAKKUMAR V",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108014",
+      "Name": "DHARSHINI S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108016",
+      "Name": "DURGA DEVI M",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108017",
+      "Name": "G BARKAVI",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108018",
+      "Name": "GAURAV CHOUDHARY",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108019",
+      "Name": "GOPINATH   S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108020",
+      "Name": "GUGAN B",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108021",
+      "Name": "HARISARAN K",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108023",
+      "Name": "HEMABHUSHAN   S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108024",
+      "Name": "HIMAJA S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108025",
+      "Name": "JAGADEESWARI N",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108026",
+      "Name": "JOYLIN CECILIA MARY C",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108027",
+      "Name": "KALANITHIRAJAN P",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108028",
+      "Name": "KAMALINI S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108029",
+      "Name": "KANNISH VARMAA K",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108030",
+      "Name": "KISHORE M",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108031",
+      "Name": "LOGHAPRIYAN K",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108032",
+      "Name": "MAHASREENIVAS P",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108033",
+      "Name": "MANORANJENI I",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108035",
+      "Name": "MOBINA M",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108036",
+      "Name": "MOHANAPRIYAN P",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108037",
+      "Name": "NITHISHKUMAR M",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108038",
+      "Name": "NITHYA  SHREE",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108039",
+      "Name": "PIRAVINKUMAR M",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108040",
+      "Name": "PORTIA MARY Q",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108041",
+      "Name": "POZHILAMUDHAN    C",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108042",
+      "Name": "PRADYUN PRAKASH",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108043",
+      "Name": "RAMPRAGASH M",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108044",
+      "Name": "RENUKA DHEVI S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108046",
+      "Name": "SAMYUKTHA S R",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108047",
+      "Name": "SANDHOSHKUMAR K",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108048",
+      "Name": "SANJITH V",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108049",
+      "Name": "SARULATHA V",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108051",
+      "Name": "SATHISH   N",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108053",
+      "Name": "SRIDHAR   V",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108054",
+      "Name": "SUBIKSHA K",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108056",
+      "Name": "SUJITH  S   - CIWGC",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108057",
+      "Name": "THAMARAIKANNAN J",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108058",
+      "Name": "VAISHAVI B",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108059",
+      "Name": "VIDYASRI M",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108060",
+      "Name": "VIJAYAKUMAR R",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108061",
+      "Name": "YASODHA T",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401108062",
+      "Name": "MADHIVANAN   S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401208001",
+      "Name": "ARUTPERUMJOTHI   S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401208002",
+      "Name": "VISHNUKANTH S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401208003",
+      "Name": "LAKSHMI  M  P",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401208004",
+      "Name": "LOGESHWARAN   S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401208005",
+      "Name": "RUTHIRAMURTHY   S",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401208006",
+      "Name": "SUJITH ARAVIND V",
+      "Department": "EEE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110001",
+      "Name": "AGILANDESWARI R",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110002",
+      "Name": "AMIRDHESH V",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110003",
+      "Name": "AMRISHA M",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110004",
+      "Name": "ANITHA   V",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110005",
+      "Name": "ARIHARAN S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110006",
+      "Name": "ARJUN   M",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110007",
+      "Name": "BAILAPUDI NANDA KISHORE",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110008",
+      "Name": "BARADWAJ    E",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110009",
+      "Name": "BAVITHRA A",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110010",
+      "Name": "BHAVANA R",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110011",
+      "Name": "DAKKA MANEESH",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110012",
+      "Name": "DEEPA V",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110013",
+      "Name": "DEEPTHI R M",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110014",
+      "Name": "DHANUSH S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110015",
+      "Name": "DHARANISRI S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110016",
+      "Name": "DHARSHINI B",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110017",
+      "Name": "DHEEPAN G",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110018",
+      "Name": "DHINESH S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110019",
+      "Name": "DIVYADHARSHNI R",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110020",
+      "Name": "DURKA SRI K",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110021",
+      "Name": "GOKUL H",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110022",
+      "Name": "HANU SRI A",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110023",
+      "Name": "HATSHAYAASRI K",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110024",
+      "Name": "HEMA S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110025",
+      "Name": "HEMACHANDRAN N",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110026",
+      "Name": "JANKUMAR S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110027",
+      "Name": "JEYACHANDIRANE B",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110028",
+      "Name": "K KRTI KOUMAR",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110029",
+      "Name": "KAVEYA  SOURESH",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110030",
+      "Name": "KISHOR S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110031",
+      "Name": "KISHOR   J",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110032",
+      "Name": "LAKSHANA JOE R",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110033",
+      "Name": "LOGADHIVEAN C",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110034",
+      "Name": "M MADHAN",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110035",
+      "Name": "MOHAMMED SAMI YUSUF",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110036",
+      "Name": "MONISHA R",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110037",
+      "Name": "MOUHANA SRI K",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110038",
+      "Name": "NAVEEN J",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110039",
+      "Name": "NISHANTHI R",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110040",
+      "Name": "NIVEDHA K",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110041",
+      "Name": "PADMAVATHI S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110042",
+      "Name": "PAVITHRA N",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110043",
+      "Name": "PRAJITH P",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110044",
+      "Name": "PRATHEEKSHA K S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110045",
+      "Name": "RAJAPRIYA N",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110046",
+      "Name": "RENITH FLAVIA M",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110047",
+      "Name": "ROHITH G",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110048",
+      "Name": "ROOBAN S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110049",
+      "Name": "SABBATI JOSHNA PADMA SRI",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110050",
+      "Name": "SANDHIYA S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110051",
+      "Name": "SASIDHARAN M",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110052",
+      "Name": "SHARAVANA PRIEN A",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110053",
+      "Name": "SHENTHIL NATHAN K",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110054",
+      "Name": "SHYAM B",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110055",
+      "Name": "SRIHARINI N",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110056",
+      "Name": "SUGANANDHAM S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110057",
+      "Name": "THULASI DASAN R",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110059",
+      "Name": "VISHNU R",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401110060",
+      "Name": "VISLAVATH SUNDHAR SINGH",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401210001",
+      "Name": "DARSHIT   M",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401210002",
+      "Name": "SRINIVASAN M",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401210003",
+      "Name": "PRIYANKA   J",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401210004",
+      "Name": "ALEX T",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401210005",
+      "Name": "THIRUMALAISAMY   S",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401210006",
+      "Name": "PRADEEP P",
+      "Department": "EIE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112001",
+      "Name": "AKAASH S S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112002",
+      "Name": "ANANYA RAVEENDRAN M P",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112003",
+      "Name": "ANUJHA R",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112004",
+      "Name": "ARTHI S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112005",
+      "Name": "BALAKOUMARANE T",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112006",
+      "Name": "BALLA HARSHA KUMAR",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112007",
+      "Name": "BHAVANA J",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112008",
+      "Name": "DHEVAVARSHINI S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112009",
+      "Name": "DHIPAK S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112010",
+      "Name": "DINESH KUMAR G",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112011",
+      "Name": "DURGA R",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112012",
+      "Name": "FOUZIYA BEGAM B",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112013",
+      "Name": "GUNJI SAI VENKATA KRISHNA",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112014",
+      "Name": "HARINI    S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112015",
+      "Name": "INDUVARMAN M",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112016",
+      "Name": "INIYA P",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112017",
+      "Name": "JEEVITHA C",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112018",
+      "Name": "KAILASH B",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112019",
+      "Name": "KARTHIGA D",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112020",
+      "Name": "KEERTHANA I",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112021",
+      "Name": "LAKSHIYA P",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112022",
+      "Name": "LOGESWARI S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112023",
+      "Name": "MADHUMITHA V",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112024",
+      "Name": "MANIKANDAN G",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112025",
+      "Name": "MANISHA G",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112026",
+      "Name": "MENDA RAMA HARINI",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112027",
+      "Name": "MOHAMED FAREED M",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112028",
+      "Name": "MOHANRAJ P",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112029",
+      "Name": "NETHRA   S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112030",
+      "Name": "NILAVAN S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112031",
+      "Name": "NITHISHKUMAR S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112032",
+      "Name": "NITHYASRI D",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112033",
+      "Name": "PADMAPRIYA  S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112034",
+      "Name": "PARVEEN BANU A",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112035",
+      "Name": "PAVITHRA R",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112036",
+      "Name": "PERABATHULA  SRI  SATYA  NAGA  DIVYA",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112038",
+      "Name": "PRAVEEN C",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112039",
+      "Name": "PREETHI E",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112040",
+      "Name": "PRIYADARSHINI S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112041",
+      "Name": "RAGAVENDRA",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112042",
+      "Name": "RANJITHA V",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112043",
+      "Name": "RIYA KUMARI",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112044",
+      "Name": "RUTHRESWARAN K",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112045",
+      "Name": "SAKTHINARAYANANE N",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112046",
+      "Name": "SALOME GRACE V",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112047",
+      "Name": "SARADA PRIYA K",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112048",
+      "Name": "SARANYAA DEVI K",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112049",
+      "Name": "SAYOOJYA C",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112050",
+      "Name": "SHAKTHIVEL M",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112051",
+      "Name": "SHANMUGAM  A",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112052",
+      "Name": "SHARAN M",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112053",
+      "Name": "SHAYAN JAIN P",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112054",
+      "Name": "SHERYL NANETTE V",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112055",
+      "Name": "SWEDHA J",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112056",
+      "Name": "THARUN S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112057",
+      "Name": "VARSHA V",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112059",
+      "Name": "YUVANRAJ S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401112060",
+      "Name": "YUVARAJ J",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401212001",
+      "Name": "GURURAJAN   A",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401212003",
+      "Name": "HARIHARASUDAN A",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401212004",
+      "Name": "PRIAN   K",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401212005",
+      "Name": "RAHUL   S",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401212006",
+      "Name": "SUDHARSAN   D",
+      "Department": "IT",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2201115055",
+      "Name": "RATHOD  ADITH - Repeater",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2201115058",
+      "Name": "THANAJAYAN   S  Repeater",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2301115044",
+      "Name": "MEKALA  SANJAY KUMAR - Repeater",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2301115023",
+      "Name": "HARIHARAN   M -  Repeater",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2301115035",
+      "Name": "KISHOER C -  Repeater",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115002",
+      "Name": "ABISHEK J",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115003",
+      "Name": "ABISHEK M",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115004",
+      "Name": "AFHAM ZIYAN T T",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115005",
+      "Name": "ANBUSELVAN K",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115006",
+      "Name": "ANNAVARAPU KOUSHIK JASWANTH KUMAR",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115007",
+      "Name": "ANUPRASATH P",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115008",
+      "Name": "ARADADI SURYA KIRAN",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115009",
+      "Name": "ASHWANTH    G",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115010",
+      "Name": "BALAGANESH S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115012",
+      "Name": "BELLAPUKONDA TANUJ SUDHARSAN",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115013",
+      "Name": "CHOLLANGI SAI ANUSHKA",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115014",
+      "Name": "CHUPPALASALI MOKSHITHA",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115015",
+      "Name": "DHARMESH S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115016",
+      "Name": "DHARSHANA V",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115017",
+      "Name": "DHINESH P",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115018",
+      "Name": "DINESH",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115019",
+      "Name": "DINESH  KUMAR VARMA   G",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115020",
+      "Name": "DIVYESH T",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115021",
+      "Name": "ESHWAR CHANDER P",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115022",
+      "Name": "GANISHGAR M",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115023",
+      "Name": "GOKUL N",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115024",
+      "Name": "GUNA V",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115025",
+      "Name": "GURUBARAN P",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115026",
+      "Name": "HARINI R  08.02.2025",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115027",
+      "Name": "HARIRAM S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115028",
+      "Name": "I SUJAN",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115029",
+      "Name": "JEFF MARSHAL V K",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115030",
+      "Name": "JOEL R",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115031",
+      "Name": "K E AVANEESH",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115032",
+      "Name": "KALAISELVAN M",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115034",
+      "Name": "KEVIN   P",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115035",
+      "Name": "KIRAN NEERALAGI",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115036",
+      "Name": "KIRUBA V",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115037",
+      "Name": "MAHESHWAR N",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115038",
+      "Name": "MHARHUMO  ODYUO",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115040",
+      "Name": "MOULEESWARAN S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115041",
+      "Name": "MUHAMED ANAS A",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115042",
+      "Name": "MUKESH KUMAR",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115043",
+      "Name": "MUTHU LAKSHMI M",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115044",
+      "Name": "NAKKA HEMANTH KUMAR",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115045",
+      "Name": "NAVEEN RAJ  G",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115046",
+      "Name": "NUNI SRI MANIKANTA GOVIND",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115048",
+      "Name": "PESINGI HEM KIRAN",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115049",
+      "Name": "PRAVEEN KUMAR N",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115050",
+      "Name": "PREMNATH A",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115051",
+      "Name": "RITESH RAJIV JOGDAND",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115052",
+      "Name": "ROHAAN S M",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115053",
+      "Name": "ROOPRATHAN L",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115054",
+      "Name": "ROSIS LEISHANGTHEM",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115055",
+      "Name": "RUBAN  RAJ   S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115056",
+      "Name": "RUDHISH VARAN A",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115057",
+      "Name": "S SRIRAM",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115059",
+      "Name": "SAMRIDHI PRASAD",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115060",
+      "Name": "SANJAI R",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115061",
+      "Name": "SANJALA M",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115062",
+      "Name": "SANJAY P",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115063",
+      "Name": "SANTHOSHKUMAR S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115064",
+      "Name": "SASIDHAARANI R",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115065",
+      "Name": "SATHISHKUMAR V",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115066",
+      "Name": "SATHIYABALAN",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115067",
+      "Name": "SHAIK  JAVED",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115068",
+      "Name": "SHAIK SADIQ",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115069",
+      "Name": "SHAMRUTH RAM N",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115070",
+      "Name": "SHARATH C",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115074",
+      "Name": "SIVA SUBRAMANIA BARATHY P",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115075",
+      "Name": "SUNIL KUMAR N",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115076",
+      "Name": "SURENDARAN C",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115077",
+      "Name": "SURIYA M",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115078",
+      "Name": "SURYAPRAKASH S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115079",
+      "Name": "TANIA B THOMAS",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115082",
+      "Name": "V SANJAY PRASADH",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115083",
+      "Name": "VELPULA  DURGA  VENKATA  SIVANAND",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115084",
+      "Name": "VENKATESH   V",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115085",
+      "Name": "YADHAVAN   S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401115086",
+      "Name": "YUVASHREE S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401215001",
+      "Name": "IYYANAR   S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401215002",
+      "Name": "HARISH G",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401215003",
+      "Name": "NAVEEN   J",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401215004",
+      "Name": "PREMSON  JOSHUA   M",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401215005",
+      "Name": "MAHESH S",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401215006",
+      "Name": "PARTHIBAN T",
+      "Department": "ME",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116001",
+      "Name": "ADIL ABDUL RAHIMAN NASEER",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116002",
+      "Name": "ANAMIKA SURESH KUMAR",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116003",
+      "Name": "ARUNKUMAR A",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116004",
+      "Name": "ARUVI A S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116005",
+      "Name": "BHANU P",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116006",
+      "Name": "BUSI SRI SAI",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116007",
+      "Name": "CHARLES  INO   S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116008",
+      "Name": "CHINTA DASWANTH PRAVEEN",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116009",
+      "Name": "DANDUPROLU  MANASA",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116011",
+      "Name": "DHARAN   S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116012",
+      "Name": "DHILSHANTH R",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116013",
+      "Name": "ERIC  JAMES   L",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116014",
+      "Name": "GUNAL K",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116015",
+      "Name": "HARINI D",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116016",
+      "Name": "ILAKKIYA",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116018",
+      "Name": "KALISHWARAN K",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116019",
+      "Name": "KAVIN   P  S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116020",
+      "Name": "KAVIPRIYAN A",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116021",
+      "Name": "KEERTHIBALA M",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116022",
+      "Name": "KISHOR S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116023",
+      "Name": "KOLATI AKHIL VENKATA DURGA",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116024",
+      "Name": "MOHANA PRAKASH B",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116025",
+      "Name": "MUTHURAM S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116026",
+      "Name": "NANDAKUMAR R",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116027",
+      "Name": "NITHESH R",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116028",
+      "Name": "NITHISHKAR   M",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116029",
+      "Name": "PADMAPRIYA Z",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116031",
+      "Name": "PRAVEENRAJ  M",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116032",
+      "Name": "RAJMOHAN B G",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116033",
+      "Name": "RENUKESH   S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116034",
+      "Name": "RICKY DYLAN A",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116037",
+      "Name": "SANGANI SRIKANTH REDDY",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116040",
+      "Name": "SEZHIYAN K",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116041",
+      "Name": "SHAAFIQH BEIG H",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116043",
+      "Name": "SIRANGU SARVAGHNA",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116044",
+      "Name": "SIVANESH   A",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116045",
+      "Name": "STEPHEN DANIEL R",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116046",
+      "Name": "STERLINGSAMMY D",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116047",
+      "Name": "SUKESH @ SUDHIR D",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116048",
+      "Name": "SURIYA N",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116049",
+      "Name": "SWEDHA S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116051",
+      "Name": "V HARESH",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116052",
+      "Name": "V KISHORE RAGAVENDRA",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116053",
+      "Name": "VETRIVENTHAN S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116054",
+      "Name": "VIGNESHWAR R",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401116055",
+      "Name": "VISHAL KRISHNA M",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401216001",
+      "Name": "MANOBALAN   K",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401216002",
+      "Name": "HENRY MARY SHYLAN",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    },
+    {
+      "RegisterNumber": "2401216003",
+      "Name": "YASHVANTH   S",
+      "Department": "MTE",
+      "CGPA": 8.5,
+      "Password": "Ptu@123"
+    }
+  ],
+  "courses": [
+    {
+      "Department": "CE",
+      "CourseName": "Structural Analysis",
+      "SubjectID": "CE301",
+      "NoOfSeats": 30
+    },
+    {
+      "Department": "ME",
+      "CourseName": "Thermodynamics",
+      "SubjectID": "ME302",
+      "NoOfSeats": 35
+    },
+    {
+      "Department": "ECE",
+      "CourseName": "Digital Signal Processing",
+      "SubjectID": "EC303",
+      "NoOfSeats": 40
+    },
+    {
+      "Department": "CSE",
+      "CourseName": "Data Structures",
+      "SubjectID": "CS304",
+      "NoOfSeats": 45
+    },
+    {
+      "Department": "EEE",
+      "CourseName": "Power Systems",
+      "SubjectID": "EE305",
+      "NoOfSeats": 30
+    },
+    {
+      "Department": "CHE",
+      "CourseName": "Chemical Reactions",
+      "SubjectID": "CH306",
+      "NoOfSeats": 20
+    },
+    {
+      "Department": "EIE",
+      "CourseName": "Control Systems",
+      "SubjectID": "EI307",
+      "NoOfSeats": 25
+    },
+    {
+      "Department": "IT",
+      "CourseName": "Database Management",
+      "SubjectID": "IT308",
+      "NoOfSeats": 40
+    },
+    {
+      "Department": "MTE",
+      "CourseName": "Material Science",
+      "SubjectID": "MT309",
+      "NoOfSeats": 25
+    }
+  ],
+  "preferences": [
+    {
+      "RegisterNumber": "2401107066",
+      "Name": "G   AMIRDAVARSHINI",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Preferences": [
+        "ME",
+        "CE",
+        "EEE",
+        "CHE",
+        "EIE",
+        "IT",
+        "ECE",
+        "MTE"
+      ]
+    }
+  ]
+}
