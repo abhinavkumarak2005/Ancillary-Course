@@ -53,14 +53,14 @@ This portal was built to support transparent CGPA-based allocation processes red
 # Confirmation page
 ![Admin CGPA](Assets/pdf-receipt.png)
 
-### Student Workflow
+ Student Workflow
 	1.	Login using Register Number + Password
 	2.	Verify CGPA
 	3.	Select and rank 8 course preferences
 	4.	Submit
 	5.	Download PDF receipt
 
-### Admin Workflow
+ Admin Workflow
 	1.	Login using the admin portal
 	2.	Manage course titles subject IDs and seat counts
 	3.	Upload or manually edit CGPA values
