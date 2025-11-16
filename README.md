@@ -1,12 +1,11 @@
-# 📄 How to write a good README
+# 📄 Ancillary Course Allocation Portal
 
-[![Spelling](https://github.com/banesullivan/README/actions/workflows/spelling.yml/badge.svg)](https://github.com/banesullivan/README/actions/workflows/spelling.yml)
 
 > *Your documentation is a direct reflection of your software, so hold it to the same standards.*
 
-After much practice, I have a recipe of sorts for writing READMEs that I follow anytime I make a new project. I wanted to share my process here, gather feedback, and see if I can lower the barrier to writing a good README.
+After architecting this system and refining its workflow this README documents the complete structure functionality and usage of the Ancillary Course Allocation Portal. This project aims to simplify college ancillary course allocation through automation clean UI and transparent CGPA-based decision-making.
 
-*This guide is geared towards projects that do not yet, or never will, have flushed out documentation. Once a project has a dedicated website, the README should turn into a minimal elevator pitch and "link fest" to relevant materials.*
+*This guide is geared toward users and developers who need a reliable offline-capable allocation system without relying on heavy university ERP platforms.*
 
 
 ## 🌟 Highlights
@@ -15,12 +14,16 @@ I think a *"Highlights"* section is one of the most important to include at the 
 
 Here are the main takeaways of this guide:
 
-- Make it inviting, friendly, and approachable
-- Find the most appealing part of your software and *sell it*!
-- Keep it concise; ain't nobody got time for your manifesto
-- Have links to *everything* relevant (documentation, CI status, deployments, etc.)
-- Emoji usage is encouraged (I'm only half kidding)
-- A [template](./TEMPLATE.md) for you to use!
+  •	Fully offline-capable system (except PDF CDN)
+	•	Clean Student Portal: login CGPA verification and preference submission
+	•	Powerful Admin Portal: course management seat editing CGPA uploads
+	•	Bulk CSV CGPA importer using multer + csv-parser
+	•	Deterministic CGPA-based allocation algorithm
+	•	Professionally formatted PDF receipt for students
+	•	CSV exports for preferences and final allocation
+	•	Lightweight backend using Express and lowdb for a flat-file database
+	•	Simple setup minimal dependencies and easy customization
+	•	Screenshot-rich documentation to help new users understand the system quickly
 
 
 ## ℹ️ Overview
