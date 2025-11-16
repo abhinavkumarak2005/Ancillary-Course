@@ -28,44 +28,15 @@ Here are the main takeaways of this guide:
 
 ## ℹ️ Overview
 
-> *If nothing else, try writing better READMEs because it will make you look more professional and legitimate.*
+> *A polished README makes your software look credible mature and worth adopting.*
 
-A good README should include a brief overview section with a paragraph or two explaining what the software does, how it works, and who made it.
+The Ancillary Course Allocation Portal is a Node.js-powered full-stack application designed to streamline ancillary course selection in educational institutions. Students authenticate verify their CGPA select their preference order and download a PDF submission receipt. Admins oversee course lists seat allocations CGPA data submissions and generate final allocation results through a transparent algorithm.
 
-Feel free to include 2-3 subsections here with relevant information in regards to who you are and how the software is relevant in a broader ecosystem of software (perhaps respectfully compare your software to other solutions out there).
+This system fills the gap between overly simple Google Forms workflows and full-scale ERP solutions by offering a focused modern approachable alternative.
 
-
-### 😊 Leave a good impression
-
-Consider the following:
-
-- Your README is often the first and *only* thing anyone will see about your software.
-- People judge your software by your README.
-- Your README is shipped alongside your code within package managers.
-
-In many people's minds, a poorly written README translates to poorly written software. Your README should convey the quality of your work, your expertise on the matter and get users excited by what you have done.
-
-> *At the end of the day, your README is often the best marketing material you have.*
-
-Additionally, try to gear your README towards the average user. Assume some first-year Computer Science student is looking at your documentation wondering if coding is for them. Show them and the world what can be done with quality software and make them feel like your software is approachable.
-
-
-### ⌛ Be considerate of people's time
-
-When someone looks over your README, they should be able to find the answers to these questions quickly:
-
-1. Does this solve my problem?
-2. Can I use this code?
-3. Who made this?
-4. How can I learn more?
-
-Try to streamline your README so that anyone glancing at it can answer those questions. This requires a bit of foresight into the typical kinds of problems people will come to your software for -- figure out those common problems and demonstrate a solution (even if that problem isn't the central aspect of your software).
-
-On my point about emoji usage in the Highlights: besides being friendly and quirky, you can use emojis to break up otherwise plain text. In most of my READMEs, I like to use emojis in the section headers. This makes it much easier for me, and hopefully, others, to navigate the document.
-
-To help people answer the question of *"who made this?"*, include a subsection in your Overview to explain who created the software.
 
 ### ✍️ Author
+I’m [Abhinav Kumar Ilango](https://github.com/abhinavkumarak2005), the developer of this system. This project reflects my goal to build clean well-documented practical tools that solve real academic workflow problems in colleges.*
 
 I'm [Bane Sullivan](https://github.com/banesullivan) and I created this guide hoping to refine my ability to create inspiring READMEs and help my colleagues better communicate what we are creating. This guide is my opinionated take on *"how to write a good README?"*
 
