@@ -53,6 +53,22 @@ This portal was built to support transparent CGPA-based allocation processes red
 # Confirmation page
 ![Admin CGPA](Assets/pdf-receipt.png)
 
+## Student Workflow
+	1.	Login using Register Number + Password
+	2.	Verify CGPA
+	3.	Select and rank 8 course preferences
+	4.	Submit
+	5.	Download PDF receipt
+
+## Admin Workflow
+	1.	Login using the admin portal
+	2.	Manage course titles subject IDs and seat counts
+	3.	Upload or manually edit CGPA values
+	4.	View submission status
+	5.	Delete submissions if needed
+	6.	Run the allocation algorithm
+	7.	Download CSV export of allocation
+
 
 ```py
 import pyvista as pv
