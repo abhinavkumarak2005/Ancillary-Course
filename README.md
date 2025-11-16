@@ -14,16 +14,16 @@ I think a *"Highlights"* section is one of the most important to include at the 
 
 Here are the main takeaways of this guide:
 
-  •	Fully offline-capable system (except PDF CDN)
-	•	Clean Student Portal: login CGPA verification and preference submission
-	•	Powerful Admin Portal: course management seat editing CGPA uploads
-	•	Bulk CSV CGPA importer using multer + csv-parser
-	•	Deterministic CGPA-based allocation algorithm
-	•	Professionally formatted PDF receipt for students
-	•	CSV exports for preferences and final allocation
-	•	Lightweight backend using Express and lowdb for a flat-file database
-	•	Simple setup minimal dependencies and easy customization
-	•	Screenshot-rich documentation to help new users understand the system quickly
+- Fully offline-capable system (except PDF CDN)
+- Clean Student Portal: login CGPA verification and preference submission
+- Powerful Admin Portal: course management seat editing CGPA uploads
+- Bulk CSV CGPA importer using multer + csv-parser
+- Deterministic CGPA-based allocation algorithm
+- Professionally formatted PDF receipt for students
+- CSV exports for preferences and final allocation
+- Lightweight backend using Express and lowdb for a flat-file database
+- Simple setup minimal dependencies and easy customization
+- Screenshot-rich documentation to help new users understand the system quickly
 
 
 ## ℹ️ Overview
