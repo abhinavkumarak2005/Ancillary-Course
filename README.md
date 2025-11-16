@@ -46,9 +46,12 @@ This portal was built to support transparent CGPA-based allocation processes red
 
 > *Show off what your software looks like in action using minimal examples and screenshots.*
 
-# Student Workflow
-
+# CGPA entry
 ![Admin CGPA](Assets/admin-cgpa.png)
+# Preference selection
+![Admin CGPA](Assets/student-prefs.png)
+# Confirmation page
+![Admin CGPA](Assets/pdf-receipt.png)
 
 
 ```py
