@@ -1,4 +1,4 @@
-Ancillary Course Allocation Portal
+*Ancillary Course Allocation Portal*
 
 A full-stack Ancillary Course Allocation system built with Node.js and Express.
 Includes a dedicated Student Portal for CGPA verification and preference submission and a powerful Admin Portal for course seat management CGPA uploads and automated allocation.
