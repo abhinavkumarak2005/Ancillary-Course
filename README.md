@@ -53,14 +53,14 @@ This portal was built to support transparent CGPA-based allocation processes red
 # Confirmation page
 ![Admin CGPA](Assets/pdf-receipt.png)
 
- Student Workflow
+# Student Workflow
 	1.	Login using Register Number + Password
 	2.	Verify CGPA
 	3.	Select and rank 8 course preferences
 	4.	Submit
 	5.	Download PDF receipt
 
- Admin Workflow
+# Admin Workflow
 	1.	Login using the admin portal
 	2.	Manage course titles subject IDs and seat counts
 	3.	Upload or manually edit CGPA values
@@ -69,13 +69,29 @@ This portal was built to support transparent CGPA-based allocation processes red
 	6.	Run the allocation algorithm
 	7.	Download CSV export of allocation
 
+# ⬇️ Installation instructions
 
+## Install Node.js dependencies:
 ```py
-import pyvista as pv
-
-text = pv.Text3D('Write better\n READMEs!')
-text.plot(cpos='xy')
+npm install
 ```
+## Install Python dependencies:
+```py
+pip install pandas
+```
+## Generate the database:
+```py
+python3 build_database.py
+```
+## Run the server:
+```py
+node server.js
+```
+## Portals:
+	•	Student Portal → http://localhost:3000
+	•	Admin Portal → http://localhost:3000/admin
+## Admin password (default):
+admin123
 
 ![example](./example.png)
 
