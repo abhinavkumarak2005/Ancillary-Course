@@ -36,24 +36,19 @@ This system fills the gap between overly simple Google Forms workflows and full-
 
 
 ### ✍️ Author
-I’m [Abhinav Kumar Ilango](https://github.com/abhinavkumarak2005), the developer of this system. This project reflects my goal to build clean well-documented practical tools that solve real academic workflow problems in colleges.*
+I’m [Abhinav Kumar Ilango](https://github.com/abhinavkumarak2005), the developer of this system. This project reflects my goal to build clean well-documented practical tools that solve real academic workflow problems in colleges.
 
-I'm [Bane Sullivan](https://github.com/banesullivan) and I created this guide hoping to refine my ability to create inspiring READMEs and help my colleagues better communicate what we are creating. This guide is my opinionated take on *"how to write a good README?"*
+This portal was built to support transparent CGPA-based allocation processes reduce manual workload automate error-prone operations and ensure fairness for every student.
 
-After all, we're in the business of Open Source Software for a reason: ***to share our work and make an impact***. Having a well-written overview of our work is crucial in pursuing that goal.
-
-### 🎁 Template
-
-Are you sold yet? Check out the included [template](./TEMPLATE.md) to get started for your project!
 
 
 ## 🚀 Usage instructions
 
-> *Show off what your software looks like in action! Try to limit it to one-liners if possible and don't delve into API specifics.*
+> *Show off what your software looks like in action using minimal examples and screenshots.*
 
-This is where you need to give *minimal* examples on how to use your software to demonstrate what it can do. I often find that screenshots or animated GIFs are the most effective ways to communicate what your software can do, as most people just skim looking at the pictures.
+#Student Workflow
+Assets/student-prefs.png
 
-When adding code, it is crucial to use proper formatting in code blocks with syntax highlighting:
 
 ```py
 import pyvista as pv
