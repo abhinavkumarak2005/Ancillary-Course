@@ -9,9 +9,11 @@ Admin Portal (CGPA Management)
 Student Portal (Preference Selection)
 
 Student Portal (Submission PDF)
+## 📸 Screenshots
 
-![Uploading 83a6444216f987da88e16cb2973e4f27.jpg…]()
-
+| Admin Portal (CGPA Management) | Student Portal (Preference Selection) | Student Portal (Submission PDF) | 
+| :---: | :---: | :---: | 
+| ![Admin Portal CGPA Page](assets/admin-cgpa.png) | ![Student Preference Selection](assets/student-prefs.png) | ![PDF Receipt](assets/pdf-receipt.png) |
 
 
 
