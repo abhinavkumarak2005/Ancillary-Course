@@ -14,9 +14,13 @@ Student Portal (Submission PDF)
 | Admin Portal (CGPA Management) |
 | Student Portal (Preference Selection) |
 | Student Portal (Submission PDF) | 
+
 | :---: |
+
 | :---: |
+
 | :---: | 
+
 | ![Admin Portal CGPA Page](Assets/admin-cgpa.png) |
 | ![Student Preference Selection](Assets/student-prefs.png) |
 | ![PDF Receipt](Assets/pdf-receipt.png) |
