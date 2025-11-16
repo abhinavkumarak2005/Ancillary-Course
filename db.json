@@ -5036,6 +5036,38 @@
         "ECE",
         "MTE"
       ]
+    },
+    {
+      "RegisterNumber": "2401107078",
+      "Name": "MALLADI  NAGA  SIREESHA",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Preferences": [
+        "ECE",
+        "CE",
+        "EEE",
+        "CHE",
+        "EIE",
+        "IT",
+        "ME",
+        "MTE"
+      ]
+    },
+    {
+      "RegisterNumber": "2401107065",
+      "Name": "EZHILARASAN  -  CIWGC",
+      "Department": "CSE",
+      "CGPA": 7.5,
+      "Preferences": [
+        "ECE",
+        "ME",
+        "EEE",
+        "IT",
+        "EIE",
+        "MTE",
+        "CE",
+        "CHE"
+      ]
     }
   ]
 }

@@ -120,7 +120,7 @@
             color: #ef4444; /* red-500 */
         }
         
-        /* --- 6. NEW: AnimatedList CSS (from your code) --- */
+        /* --- 6. *** MODIFIED *** AnimatedList CSS --- */
         .scroll-list-container {
             position: relative;
             width: 100%;
@@ -146,16 +146,30 @@
             cursor: pointer;
             opacity: 0;
             transform: scale(0.8) translateY(20px);
-            transition: opacity 0.4s ease-out, transform 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+            transition: opacity 0.4s ease-out, transform 0.4s cubic-bezier(0.215, 0.610, 0.355, 1), background-color 0.2s ease-out, box-shadow 0.2s ease-out; /* Added transitions */
         }
         .item.is-visible {
             opacity: 1;
             transform: scale(1) translateY(0);
         }
         
-        .item:hover { background-color: #271e37; }
-        .item.selected { background-color: #3b82f6; }
-        .item-text { color: white; margin: 0; font-weight: 500; }
+        /* --- MODIFIED: Added text-align and better hover/selected --- */
+        .item:hover { 
+            background-color: #271e37; 
+            transform: scale(1.02); /* Add subtle grow */
+        }
+        .item.selected { 
+            background-color: #3b82f6; /* Blue */
+            color: white;
+            transform: scale(1.03);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3); /* Blue glow */
+        }
+        .item-text { 
+            color: white; 
+            margin: 0; 
+            font-weight: 500;
+            text-align: center; /* <<< ALIGNMENT FIX */
+        }
         
         .top-gradient {
             position: absolute; top: 0; left: 0; right: 0; height: 50px;
@@ -170,12 +184,12 @@
             transition: opacity 0.3s ease;
         }
 
-        /* --- 7. NEW: BubbleMenu CSS (from your code) --- */
+        /* --- 7. NEW: BubbleMenu CSS --- */
         #page-dashboard:not(.hidden) {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 8rem; /* Pushes bubbles down */
+            padding-top: 8rem;
             padding-bottom: 8rem;
         }
         .bubble-menu-items {
@@ -340,8 +354,8 @@
         <div class="w-full max-w-6xl mx-auto mb-6">
             
             <div id="header-dashboard" class="text-center pt-12 mb-8"> 
-                <h1 class="text-6xl font-bold text-white sf-pro-font">Ancillary Course</h1>
-                <h1 class="text-5xl font-bold text-white sf-pro-font mt-2">Admin Portal</h1>
+                <h1 class="text-7xl font-extrabold text-white sf-pro-font">Ancillary Course</h1>
+                <h1 class="text-6xl font-bold text-white sf-pro-font mt-2">Admin Portal</h1>
                 <p class="text-md text-gray-300 mt-4">Manage student data, courses, and preferences.</p>
             </div>
             
@@ -395,10 +409,11 @@
             <!-- ### THIS IS THE MODIFIED CGPA PAGE ### -->
             <!-- ############################################ -->
             <div id="page-cgpa" class="hidden page">
-                <div class="glass-card p-6 md:p-8 rounded-xl max-w-2xl mx-auto"> <!-- Changed max-width -->
+                <!-- *** THIS IS THE FIX: Made the card wider *** -->
+                <div class="glass-card p-6 md:p-8 rounded-xl max-w-4xl mx-auto"> <!-- max-w-2xl changed to max-w-4xl -->
                     <h3 class="text-xl font-semibold text-white mb-4 text-center">Manage Student CGPA</h3>
                     
-                    <!-- *** NEW TABS *** -->
+                    <!-- *** TABS *** -->
                     <div class="flex border-b border-white/20 mb-6">
                         <button id="tab-manual-entry" class="cgpa-management-tab px-4 py-2 font-medium text-blue-400 border-b-2 border-blue-400 flex-1 text-center">
                             Manual Entry
@@ -408,7 +423,7 @@
                         </button>
                     </div>
 
-                    <!-- *** NEW: Upload Content (Moved from Report) *** -->
+                    <!-- *** Upload Content *** -->
                     <div id="cgpa-tab-upload" class="cgpa-tab-content hidden">
                         <p class="text-sm text-gray-300 mb-4 text-center">1. Select a department to upload data for.</p>
                         
@@ -445,7 +460,7 @@
                         </div>
                     </div>
 
-                    <!-- *** Original Manual Entry Content (Now in a tab) *** -->
+                    <!-- *** Manual Entry Content *** -->
                     <div id="cgpa-tab-manual" class="cgpa-tab-content">
                         <p class="text-sm text-gray-300 mb-4 text-center">Select a department to view and edit students manually.</p>
                         <div class="scroll-list-container">
@@ -460,7 +475,6 @@
                             <h4 id="cgpa-table-heading" class="text-lg font-semibold text-gray-100 mb-4"></h4>
                             <div class="overflow-x-auto">
                                 <table class="min-w-full divide-y divide-white/10 glass-table">
-                                    <!-- *** THIS IS THE FIX: Added "Action" header *** -->
                                     <thead>
                                         <tr>
                                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Register Number</th>
@@ -557,13 +571,9 @@
                 </div>
             </div>
 
-            <!-- ############################################ -->
-            <!-- ### THIS IS THE MODIFIED REPORT PAGE ### -->
-            <!-- ############################################ -->
             <div id="page-report" class="hidden page">
-                <div class="glass-card p-6 md:p-8 rounded-xl max-w-lg mx-auto"> <!-- Back to max-w-lg -->
+                <div class="glass-card p-6 md:p-8 rounded-xl max-w-lg mx-auto"> 
                     
-                    <!-- *** MODIFIED *** Tab Navigation (Upload tab removed) -->
                     <div class="flex border-b border-white/20 mb-6">
                         <button id="tab-preferences" class="report-tab px-4 py-2 font-medium text-blue-400 border-b-2 border-blue-400 flex-1 text-center">
                             Preference Report
@@ -573,7 +583,6 @@
                         </button>
                     </div>
 
-                    <!-- 2. Tab Content for Preferences -->
                     <div id="report-tab-preferences" class="report-tab-content">
                         <div class="text-center">
                             <div class="mx-auto bg-blue-500/30 text-white p-4 rounded-full w-16 h-16 flex items-center justify-center">
@@ -598,7 +607,6 @@
                         </div>
                     </div>
 
-                    <!-- 3. Tab Content for Allocation (Hidden by default) -->
                     <div id="report-tab-allocation" class="report-tab-content hidden">
                         <div class="text-center">
                             <div class="mx-auto bg-green-500/30 text-white p-4 rounded-full w-16 h-16 flex items-center justify-center">
@@ -618,9 +626,6 @@
                     
                 </div>
             </div>
-            <!-- ############################################ -->
-            <!-- ### END OF MODIFIED REPORT PAGE ### -->
-            <!-- ############################################ -->
 
         </div> 
     </div>
